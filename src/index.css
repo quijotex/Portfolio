@@ -1,0 +1,25 @@
+@import url(/src/Styles/AboutMe.css);
+@import url(/src/Styles/AppNav.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100vh;
+}
+body {
+    font-family: 'Sen', sans-serif;
+}
+#root {
+    --dark-blue: #000000;
+    --Earie-black: #181823;
+    --Peach: #FFF3E4;
+    --Pink-Lace: #FBE4FF;
+    --Whitw: #FFFFFF;
+    --Light-grey: #8491A0;
+    --Dark-Grey: #5B6876;
+    --Pink-Lace: #5221E6;
+    --Blue-background: #27273e;
+}

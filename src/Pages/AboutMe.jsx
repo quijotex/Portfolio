@@ -1,8 +1,10 @@
 const AboutMe = () => {
     return(
-        <>
-        <h2>About me</h2>
-        </>
+        <main className="aboutme">
+        <div className="background-name"/>
+        <div className="background-links"/>
+
+        </main>
     )
 }
 export default AboutMe

@@ -6,34 +6,15 @@ import Work from './Pages/Work'
 import Skillset from './Pages/Skillset'
 import Learning from './Pages/Learning'
 import Contact from './Pages/Contact'
+import AppNav from './Components/AppNav'
 
 function App() {
  
 
   return (
     <>
-     <HashRouter>
-      <header>Mario.M</header>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">About me</Link>
-          </li>
-          <li>
-            <Link to="/work">Work</Link>
-          </li>
-          <li>
-            <Link to="/skillset">Skillset</Link>
-          </li>
-          <li>
-            <Link to="/learning">Learning</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
-
+     <HashRouter>      
+        <AppNav/>
       <Routes>
         <Route path='/' element={<AboutMe/>}/>
         <Route path='/work' element={<Work/>}/>
