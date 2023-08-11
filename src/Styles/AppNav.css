@@ -6,18 +6,32 @@
     text-decoration: none;
     cursor: pointer;
 }
+.pages-nav {
+    background: var(--Blue-background) ;
+    width: 100%;
+}
 .links-nav {
     margin-right: 60px;
     height: 100%;
     display: flex;
     flex-direction: row;
-    gap: 40px;
+    gap: 10px;
     align-items: center;
     justify-content: flex-end;
+}
+.links-nav li, .links-nav li a, .links-nav li a:hover {
+    width: 90px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .links-nav li {
     list-style: none;
     cursor: pointer;
+}
+.links-nav li a:hover {
+    background-color: var(--Pink-Lace);
 }
 .name-nav {
     background-color: var( --dark-blue);
@@ -30,20 +44,10 @@
 .name-nav h1 {
     color: var(--Whitw);
     padding-right: 170px;
-   
 }
-.pages-nav {
-    background: var(--Blue-background) ;
-    width: 100%;
-}
+
 .pages-nav a {
     color: var(--Whitw);
 }
-.pages-nav li:nth-child(5) {
-    background-color: var(--Pink-Lace);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 90px;
-}
+
+
