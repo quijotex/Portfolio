@@ -1,0 +1,84 @@
+.home {
+    display: flex;
+    
+}
+.background-name {
+    background-color: var( --dark-blue);
+    width: 500px;
+}
+.background-links {
+    background-color: var(--Blue-background);
+    height: calc(100vh - 70px);
+    width: 100%;
+}
+.photo-me {
+    position: absolute;
+    width: 700px;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    background: linear-gradient(170deg, rgb(46, 52, 59) 0%, rgba(24,24,35,1) 59%);
+}
+.photo-me img {
+    object-fit: contain;
+    height: 450px;
+}
+.home-text {
+    position: absolute;
+    z-index: 20;
+    width: 800px;
+    right: 50px;
+    height: 350px;
+    text-align: center;
+    bottom: 190px;
+    text-align: start;
+}
+.home-text span {
+    color: var(--Whitw);
+}
+.text-me {
+    display: flex;
+    font-size: 4.2rem;
+}
+.text-me span:nth-child(1) {
+    margin-right: 15px;
+}
+.home-text h4 {
+    font-size: 3.75rem;
+    margin-bottom: 50px;
+    color: var(--Light-grey
+    );
+}
+.text-description {
+    color: var(--Whitw);
+    line-height: 1.3;
+}
+.home-buttons  {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    bottom: 20px;
+    width: 100%;
+}
+.home-buttons button {
+    background-color: var(--Light-grey);
+    color: var(--Whitw);
+    border-radius: 50%;
+    border: none;
+    font-size: 1.3rem;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 1px 1px 6px 0px white;   
+}
+.home-buttons button:hover {
+    transform: scale(1.1);
+}
+.home-buttons a {
+    text-decoration: none;
+}
