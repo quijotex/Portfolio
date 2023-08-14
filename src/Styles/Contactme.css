@@ -1,6 +1,8 @@
 .contact {
-    height: calc(100vh - 150px);
-   
+    height: calc(100vh - 70px);
+    background: var( --dark-blue); 
+    color: var(--Whitw);
+    overflow-y: hidden;
 }
 .contact-me {
     display: flex;
@@ -12,17 +14,58 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    align-items: center;
-   
+    align-items: center; 
+}
+.text-contact {
+    padding-left: 200px;
+    margin-top: 60px;
+}
+.contact-text h2 {
+    justify-content: start;
+}
+.contact-text p {
+    margin-top: 20px;
+}
+.contact-text img {
+    height: 300px;
+    width: 500px;
+    position: relative;
+    left: 60px;
+    top: 50px;
 }
 .contact-form {
     width: 50%;
-  
+    height: 100%;
 }
 .contact-form form {
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    height: 100%;
+    align-items: start;
+    width: 80%;
+  
+}
+.contact-form input {
+    width: 100%;
+    background-color: var( --Earie-black);
+    color: var(--Whitw);
+    height: 50px;
+    border: none;
+    margin: 8px 0 10px 0;
+    padding: 10px;
+   
+}
+.contact-form textarea {
+    width: 100%;
+    background-color: var( --Earie-black);
+    color: var(--Whitw);
+    height: 80px;
+    border: none;
+    margin: 8px 0 20px 0;
+    padding: 10px;
+}
+.contact-form input:nth-child(9) {
+    background-color: var( --Blue-Lace);
+    height: 70px;
 }

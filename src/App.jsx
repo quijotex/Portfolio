@@ -24,8 +24,8 @@ function App() {
           <Route path='/work' element={<Work/>}/>
           <Route path='/skillset' element={<Skillset/>}/>
           <Route path='/learning' element={<Learning/>}/>
-          <Route path='/contact' element={<Contact/>}/>
           </Route>
+          <Route path='/contact' element={<Contact/>}/>
       </Routes>
      </HashRouter>
     </>
