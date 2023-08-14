@@ -1,0 +1,106 @@
+.aboutme {
+    width: 100%;
+    display: flex;
+    background-color: var(--Earie-black);
+}
+.illustration {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.illustration-man {
+    height: 500px;
+}
+.aboutme-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: calc(100vh - 150px);
+    gap: 20px;
+}
+.aboutme-buttons button {
+    width: 100%;
+    height: 70px;
+    font-size: 2rem;
+    --bs-btn-color: var(--Whitw); 
+    --bs-btn-bg: none; 
+    --bs-btn-border-color: none;
+    --bs-btn-hover-color: var(--Whitw);
+    --bs-btn-hover-bg: none;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-active-color: var(--Whitw);
+    --bs-btn-active-bg: none;
+    --bs-btn-active-border: none;
+}
+.objectives .tooltip-inner, .education .tooltip-inner, .languages  .tooltip-inner {
+    background-color: #FFF3E4;
+    color: black;
+    font-family: 'Sen', sans-serif;
+}
+.objectives {
+    --bs-tooltip-max-width: 100%;
+    --bs-tooltip-max-height: 100%;
+    width: 49.5%;
+    height: calc(100% - 150px);
+    margin-top: 65px;
+    margin-bottom: 80px;
+    --bs-tooltip-opacity: 1;
+}
+.objectives .tooltip-inner, .education .tooltip-inner {
+    height: 100%;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.objectives .tooltip-arrow::before {
+    display: none;
+}
+.render-uls {
+    display: flex;
+}
+.render-uls ol {
+    padding-left: 0px;
+    text-align: left;
+}
+.render-uls ul {
+    padding: 20px;
+    margin-bottom: 0;
+}
+.education {
+    --bs-tooltip-max-width: 100%;
+    --bs-tooltip-max-height: 100%;
+    width: 49.5%;
+    height: calc(100% - 150px);
+    margin-bottom: 80px;
+    --bs-tooltip-opacity: 1;
+}
+.education .tooltip-inner p {
+    font-size: 1.4rem;
+}
+.education .tooltip-arrow::before {
+    display: none;
+}
+.languages {
+    --bs-tooltip-max-width: 100%;
+    --bs-tooltip-max-height: 100%;
+    width: 49.5%;
+    height: calc(100% - 75px);
+    margin-bottom: 80px;
+    --bs-tooltip-opacity: 1;
+}
+.languages p {
+    font-size: 1.2rem;
+}
+.languages .tooltip-inner {
+    height: calc(100% - 75px);
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.languages .tooltip-arrow::before {
+    display: none;
+}

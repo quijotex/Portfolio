@@ -1,5 +1,8 @@
 @import url(/src/Styles/Home.css);
 @import url(/src/Styles/AppNav.css);
+@import url(/src/Styles/Aboutme.css);
+@import url(/src/Styles/Footer.css);
+@import url(/src/Styles/Contactme.css);
 
 * {
     padding: 0;
@@ -20,6 +23,6 @@ body {
     --Whitw: #FFFFFF;
     --Light-grey: #8491A0;
     --Dark-Grey: #5B6876;
-    --Pink-Lace: #5221E6;
+    --Blue-Lace: #5221E6;
     --Blue-background: #27273e;
 }

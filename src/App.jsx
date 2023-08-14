@@ -1,5 +1,5 @@
 
-import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { HashRouter, Routes, Route, Link  } from 'react-router-dom'
 import AboutMe from './Pages/AboutMe'
 import Work from './Pages/Work'
@@ -8,6 +8,7 @@ import Learning from './Pages/Learning'
 import Contact from './Pages/Contact'
 import AppNav from './Components/AppNav'
 import Home from './Pages/Home'
+import Footer from './Components/Footer';
 
 function App() {
  
@@ -18,11 +19,13 @@ function App() {
         <AppNav/>
       <Routes>
       <Route path='/' element={<Home/>}/>
-        <Route path='/aboutme' element={<AboutMe/>}/>
-        <Route path='/work' element={<Work/>}/>
-        <Route path='/skillset' element={<Skillset/>}/>
-        <Route path='/learning' element={<Learning/>}/>
-        <Route path='/contact' element={<Contact/>}/>
+        <Route element={<Footer/>}>
+          <Route path='/aboutme' element={<AboutMe/>}/>
+          <Route path='/work' element={<Work/>}/>
+          <Route path='/skillset' element={<Skillset/>}/>
+          <Route path='/learning' element={<Learning/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          </Route>
       </Routes>
      </HashRouter>
     </>

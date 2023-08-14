@@ -31,7 +31,7 @@
     cursor: pointer;
 }
 .links-nav li a:hover {
-    background-color: var(--Pink-Lace);
+    background-color: var(--Blue-Lace);
 }
 .name-nav {
     background-color: var( --dark-blue);
@@ -44,8 +44,8 @@
 .name-nav h1 {
     color: var(--Whitw);
     padding-right: 170px;
+    font-size: 1.5rem;
 }
-
 .pages-nav a {
     color: var(--Whitw);
 }
