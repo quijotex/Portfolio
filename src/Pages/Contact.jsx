@@ -3,14 +3,13 @@ import IllustrationUniverse from '../assets/Images/IllustrationUniverse.svg'
 const Contact = () => {
 
    
-
     return(
         <section className="contact">
             <div className="contact-me">
                 <div className="contact-text">
                     <div className='text-contact'>
                         <h2>Get in touch</h2>
-                        <p>Now that you know a lot about me, let me know if you are interested to work with me.</p>
+                        <p>Now that you know a lot about me, I'd love to hear how I can come in and complement your business with my skills.</p>
                     </div>
                     <img src={IllustrationUniverse} alt=''/>
                 </div>
