@@ -61,9 +61,10 @@
 .render-uls {
     display: flex;
 }
-.render-uls ol {
+.render-uls li {
     padding-left: 0px;
     text-align: left;
+    list-style: none;
 }
 .render-uls ul {
     padding: 20px;

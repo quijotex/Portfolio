@@ -13,41 +13,41 @@ const AboutMe = () => {
             <div>
                 <ul>
                     <h2>Goals</h2>
-                    <ol>
+                    <li>
                         <p>
                         Become a proficient front-end developer. I'm eager to create visually appealing and responsive web interfaces that enhance user experiences and drive engagement.
                         </p>
-                    </ol>
-                    <ol>
+                    </li>
+                    <li>
                         <p>
                         Engage in team projects to learn diverse technologies and refine collaboration, enhancing both technical and interpersonal skills.
                         </p>
-                    </ol>
-                    <ol>
+                    </li>
+                    <li>
                         <p>
                         Continuously adapt to new web trends and tools, ensuring innovative contributions to modern web applications.
                         </p>
-                    </ol>
+                    </li>
                 </ul>
             </div>
             <div>
                 <ul>
                     <h2>Objectives</h2>
-                    <ol>
+                    <li>
                         <p>
                         Collaborate on projects to sharpen my front-end development skills, making meaningful contributions within 6 months.
                         </p>
-                    </ol>
-                    <ol>
+                    </li>
+                    <li>
                         <p>
                         Seek mentorship, engage in code reviews, and refine coding practices to actively contribute to team projects within 1 year.
                         </p>
-                    </ol>
-                    <ol>
+                    </li>
+                    <li>
                         <p>
                         Embrace new technologies and practices to ensure valuable, forward-looking contributions to the company's web development efforts.
                         </p>
-                    </ol>   
+                    </li>   
                 </ul> 
             </div>
         </div>
