@@ -1,7 +1,7 @@
 import React from 'react'
 import Typed from 'typed.js'
 import photo from '../assets/Images/ProfilePhoto.webp'
-
+import { FormattedMessage } from 'react-intl'
 
 const Home = () => {
 
@@ -31,12 +31,12 @@ const Home = () => {
         </div>
         <div className='home-text'>
             <div className='text-me'>
-                <span>I'm</span>
+                <span><FormattedMessage id="app.home.iam" defaultMessage="I'm"/></span>
                 <span ref={el}/> 
             </div>
-            <h4>based in Colombia </h4>
+            <h4><FormattedMessage id="app.home.basedin" defaultMessage="based in Colombia"/> </h4>
             <div className='text-description'>
-                <p>I'm a curious and dedicated junior web developer, with a strong passion for the IT industry; always seeking constant and continuous improvement of my knowledge and skills.</p>
+                <p><FormattedMessage id="app.home.description" defaultMessage="I'm a curious and dedicated junior web developer, with a strong passion for the IT industry; always seeking constant and continuous improvement of my knowledge and skills."/> </p>
             </div>
         </div>
         <div className='home-buttons'>

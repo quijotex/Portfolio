@@ -49,5 +49,10 @@
 .pages-nav a {
     color: var(--Whitw);
 }
-
-
+.modal-appnav {
+    display: none;
+    position: relative;
+}
+.modal-appnav--visible {
+    display: flex;
+}

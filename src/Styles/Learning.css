@@ -1,0 +1,38 @@
+.learning {
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Earie-black);
+    color: var(--Withw);
+    gap: 50px;
+}
+.learning h2 {
+    color: var(--Whitw);
+}
+.learning-svg {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+  
+}
+.learning-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--Whitw);
+    gap: 20px;
+}
+.learning-contact  h2 {
+    font-size: 1.5rem;
+}
+.learning-contact button {
+    color: var(--Blue-Lace);
+    background-color: var(--Earie-black);
+    border: none;
+  
+}
+.learning-contact button i {
+    font-size: 5rem;
+}

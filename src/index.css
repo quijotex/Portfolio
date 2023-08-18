@@ -5,6 +5,8 @@
 @import url(/src/Styles/Contactme.css);
 @import url(/src/Styles/Work.css);
 @import url(/src/Styles/Skillset.css);
+@import url(/src//Styles/Learning.css);
+
 * {
     padding: 0;
     margin: 0;
