@@ -1,5 +1,5 @@
 .work-done {
-    background: var( --dark-blue);
+    background: var( --Earie-black);
     overflow-x: hidden;
 }
 .work-done h2 {
@@ -65,8 +65,6 @@
     --bs-btn-active-bg: var( --Blue-Lace);
     --bs-btn-hover-border-color: var(--Blue-Lace);
     color: var(--Blue-Lace);
-  
     height: 45px;
     position: relative;
-  
 }
