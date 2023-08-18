@@ -3,6 +3,7 @@
 @import url(/src/Styles/Aboutme.css);
 @import url(/src/Styles/Footer.css);
 @import url(/src/Styles/Contactme.css);
+@import url(/src/Styles/Work.css);
 
 * {
     padding: 0;

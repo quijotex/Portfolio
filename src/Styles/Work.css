@@ -1,0 +1,72 @@
+.work-done {
+    background: var( --dark-blue);
+    overflow-x: hidden;
+}
+.work-done h2 {
+    text-align: center;
+    padding-top: 40px;
+    color: var(--Whitw);
+}
+.row>* {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.work-col {
+    padding: 40px;
+}
+.work-card {
+    width: 650px; 
+    background-color: var(--Blue-background);
+    color: var(--Whitw);
+}
+.work-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.work-card__img {
+ width: 100%;
+}
+.work-img__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.work-img--hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: -0;
+    background-color: #5b68767e;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.work-img:hover .work-img--hover {
+    display: flex;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+.view-more {
+    --bs-tooltip-max-width: 480px;
+}
+.work-card__body {
+    display: flex;
+    justify-content: space-between;
+}
+.work-card__button {
+    background: none;
+    --bs-btn-hover-bg: var(--Blue-Lace);
+    --bs-btn-border-color:var(--Blue-Lace);
+    --bs-btn-active-bg: var( --Blue-Lace);
+    --bs-btn-hover-border-color: var(--Blue-Lace);
+    color: var(--Blue-Lace);
+  
+    height: 45px;
+    position: relative;
+  
+}

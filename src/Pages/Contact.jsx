@@ -2,7 +2,6 @@ import IllustrationUniverse from '../assets/Images/IllustrationUniverse.svg'
 
 const Contact = () => {
 
-   
     return(
         <section className="contact">
             <div className="contact-me">
