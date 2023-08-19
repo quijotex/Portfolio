@@ -28,7 +28,7 @@
     font-size: 1.5rem;
 }
 .learning-contact button {
-    color: var(--Blue-Lace);
+    color: var( --Input-button);
     background-color: var(--Earie-black);
     border: none;
   

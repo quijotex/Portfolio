@@ -10,7 +10,7 @@
 }
 .footer-buttons button {
     background-color: var(--Light-grey);
-    color: var(--Whitw);
+    color: var(--Buttons-Footer);
     border-radius: 50%;
     border: none;
     font-size: 1.3rem;

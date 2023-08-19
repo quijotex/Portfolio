@@ -27,7 +27,7 @@ const Contact = ({language} ) => {
                         <input type="text" name="subject" id="subject" required/>
                         <label name="message" htmlFor="message"><FormattedMessage id="app.contact.formmessage" defaultMessage="Message"/></label>
                         <textarea name="message" id="message" cols="30" rows="5"/>
-                        <input type="submit" value={language?  "Conectemos!" : "Let's get started"} />
+                        <input type="submit" value={language?  "¡Conectemos!" : "Let's get started"} />
                         <input type="hidden" name="_next" value="https://mariomartinez.netlify.app/#/contact"/>
                         <input className="form-button" type="hidden" name="_captcha" value="false"/>
                     </form>

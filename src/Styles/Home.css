@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: end;
-    background: linear-gradient(170deg, rgb(46, 52, 59) 0%, rgba(24,24,35,1) 59%);
+    background: var(--Color-Photo);
 }
 .photo-me img {
     object-fit: contain;
@@ -64,7 +64,7 @@
 }
 .home-buttons button {
     background-color: var(--Light-grey);
-    color: var(--Whitw);
+    color: var(--Buttons-Footer);
     border-radius: 50%;
     border: none;
     font-size: 1.3rem;

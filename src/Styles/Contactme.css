@@ -48,7 +48,7 @@
 }
 .contact-form input {
     width: 100%;
-    background-color: var( --Earie-black);
+    background-color: var(--contact);
     color: var(--Whitw);
     height: 50px;
     border: none;
@@ -58,7 +58,7 @@
 }
 .contact-form textarea {
     width: 100%;
-    background-color: var( --Earie-black);
+    background-color: var(--contact);
     color: var(--Whitw);
     height: 80px;
     border: none;
@@ -66,6 +66,7 @@
     padding: 10px;
 }
 .contact-form input:nth-child(9) {
-    background-color: var( --Blue-Lace);
+    background-color: var(--Input-button);
     height: 70px;
+    color: white;
 }

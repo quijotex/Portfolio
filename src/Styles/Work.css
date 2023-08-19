@@ -60,11 +60,11 @@
 }
 .work-card__button {
     background: none;
-    --bs-btn-hover-bg: var(--Blue-Lace);
-    --bs-btn-border-color:var(--Blue-Lace);
-    --bs-btn-active-bg: var( --Blue-Lace);
-    --bs-btn-hover-border-color: var(--Blue-Lace);
-    color: var(--Blue-Lace);
+    --bs-btn-hover-bg: var(--Input-button);
+    --bs-btn-border-color:var(--Input-button);
+    --bs-btn-active-bg: var( --Input-button);
+    --bs-btn-hover-border-color: var(--Input-button);
+    color: var(--Input-button);
     height: 45px;
     position: relative;
 }

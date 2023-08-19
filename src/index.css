@@ -30,4 +30,8 @@ body {
     --Dark-Grey: #5B6876;
     --Blue-Lace: #5221E6;
     --Blue-background: #27273e;
+    --Color-Photo: linear-gradient(170deg, rgb(46, 52, 59) 0%, rgba(24,24,35,1) 59%);
+    --Buttons-Footer: #ffffff;
+    --Input-button: #5221E6;
+    --contact: #181823;
 }

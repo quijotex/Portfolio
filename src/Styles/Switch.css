@@ -41,6 +41,6 @@ input:checked+.slider {
 }
 input:checked+.slider:before {
     transform: translateX(1.8em);
-    background-color: var(--Whitw);
+    background-color: #FBE4FF;
     border: 1px solid black;
 }

@@ -9,7 +9,7 @@ const Footer = () => {
             <button><i className='bx bxl-linkedin-square'></i></button>
             </a>
             <a href='https://github.com/quijotex' target='_blank'>
-            <button><i className='bx bxl-github' ></i></button>
+            <button><i className='bx bxl-github'></i></button>
             </a>
             <a href='mailto:mariopresiga@gmail.com'>
             <button><i className='bx bx-envelope'></i></button>
