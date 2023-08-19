@@ -31,12 +31,12 @@ const Home = () => {
         </div>
         <div className='home-text'>
             <div className='text-me'>
-                <span><FormattedMessage id="app.home.iam" defaultMessage="I'm"/></span>
+                <span><FormattedMessage id="app.home.iam" defaultMessage={"I'm"}/></span>
                 <span ref={el}/> 
             </div>
-            <h4><FormattedMessage id="app.home.basedin" defaultMessage="based in Colombia"/> </h4>
+            <h4><FormattedMessage id="app.home.basedin" defaultMessage={"based in Colombia"}/> </h4>
             <div className='text-description'>
-                <p><FormattedMessage id="app.home.description" defaultMessage="I'm a curious and dedicated junior web developer, with a strong passion for the IT industry; always seeking constant and continuous improvement of my knowledge and skills."/> </p>
+                <p><FormattedMessage id="app.home.description" defaultMessage={"I'm a curious and dedicated junior web developer, with a strong passion for the IT industry; always seeking constant and continuous improvement of my knowledge and skills."}/> </p>
             </div>
         </div>
         <div className='home-buttons'>

@@ -1,6 +1,6 @@
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { HashRouter, Routes, Route, Link  } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 import AboutMe from './Pages/AboutMe'
 import Work from './Pages/Work'
 import Skillset from './Pages/Skillset'
@@ -11,24 +11,27 @@ import Home from './Pages/Home'
 import Footer from './Components/Footer';
 import { IntlProvider } from 'react-intl';
 import { useState, useEffect } from 'react';
+import spanish from './locales/es.json';
+import english from './locales/en.json';
 
 function App() {
  
   const [ locale, setLocale ] = useState("en");
-  const [ messages, setMessages ] = useState({})
   const [ language, setLanguage ] = useState(false)
 
+  const switchLanguages = {
+    en: english,
+    es: spanish
+  }
 
-  useEffect(() => {
-    import(`./locales/${locale}.json`).then((messages) => {
-      setMessages(messages)
-    })
-  }, [locale])
+const LocalData = switchLanguages[locale]
+ 
   return (
-    <>
+    
+    <IntlProvider messages={LocalData} key={locale}  locale={locale}>
      <HashRouter> 
-      <IntlProvider messages={messages} key={locale}  locale={locale}>
-        <AppNav setLocale={setLocale} locale={locale}/>
+      
+        <AppNav setLocale={setLocale} locale={locale} setLanguage={setLanguage}/>
       <Routes>
       <Route path='/' element={<Home/>}/>
         <Route element={<Footer/>}>
@@ -39,9 +42,10 @@ function App() {
           </Route>
           <Route path='/contact' element={<Contact language={language}/>}/>
       </Routes>
-      </IntlProvider>    
+    
      </HashRouter>
-    </>
+     </IntlProvider> 
+  
   )
 }
 

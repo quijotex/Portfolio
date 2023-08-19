@@ -4,6 +4,14 @@
     "app.appnav.skillset" : "Skillset",
     "app.appnav.learning" : "Learning",
     "app.appnav.contact" : "Contact",
+    "app.appnav.settings" : "Settings",
+    "app.appnav.changelanguage" : "Change language:",
+    "app.appnav.lang" : "Choose an option",
+    "app.appnav.languageEs" : "Spanish",
+    "app.appnav.languageEn" : "English",
+    "app.appnav.changemode" : "Change mode:",
+    "app.appnav.darkmode": "Dark",
+    "app.appnav.lightmode": "Light",
     "app.aboutme.goal": "Goals",
     "app.aboutme.goalone": " Become a proficient front-end developer. I'm eager to create visually appealing and responsive web interfaces that enhance user experiences and drive engagement.",
     "app.aboutme.goaltwo": "Engage in team projects to learn diverse technologies and refine collaboration, enhancing both technical and interpersonal skills.",
@@ -49,4 +57,4 @@
     "app.work.technologies" : "Technologies",
     "app.work.viewmore" : "View more",
     "app.work.go" : "Go"
-}
+ }

@@ -49,10 +49,48 @@
 .pages-nav a {
     color: var(--Whitw);
 }
+.appnav-settings {
+    color: var(--Whitw);
+    border: none;
+    background-color: var(--Blue-background);
+}
 .modal-appnav {
     display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.486);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+}
+.modal-appnav.is-visible {
+    display: flex;
+}
+.visible-modal {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--Whitw);
+    gap: 40px;
+    background-color: var(--Blue-background);
+    border-radius: 5px;
     position: relative;
 }
-.modal-appnav--visible {
+.modal-button {
+    position: absolute;
+   top: 20px;
+   right: 20px;
+    color: var(--Whitw);
+    background-color: var(--Blue-background);
+    border: none;
+}
+.switch-mode {
     display: flex;
+    gap: 20px;
 }
