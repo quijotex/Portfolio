@@ -167,7 +167,7 @@ body {
     }
     /*About me*/
     .aboutme {
-        height: calc(100vh - 80px);
+        height: calc(100vh - 150px);
     }
     .illustration {
         display: none;
