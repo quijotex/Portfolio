@@ -105,6 +105,9 @@ body {
     .home-text p {
         font-size: 1rem;
     }
+    .icons-tools {
+        gap: 0px;
+    }
     .text-me {
         font-size: 2rem;
     }
@@ -141,19 +144,23 @@ body {
     } 
     .home-text {
         width: 300px;
-        left: 35px;
-        bottom: 90px;
+        left: 40px;
+        bottom: 140px;
     }
     .home-text h4 {
         font-size: 1.6rem;
     } 
     .home-text p {
         font-size: 0.8rem;
-        width: 300px;
+        width: 304.3px;
         text-align: justify;
+      
     }
     .text-me {
         font-size: 1.4rem;
+    }
+    .icons-tools {
+       justify-content: flex-end;
     }
     /*Modal responsive*/
     .links-nav {

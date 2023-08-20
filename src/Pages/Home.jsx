@@ -2,6 +2,13 @@ import React from 'react'
 import Typed from 'typed.js'
 import photo from '../assets/Images/ProfilePhoto.webp'
 import { FormattedMessage } from 'react-intl'
+import css3 from '../assets/Images/css3.svg'
+import html5 from '../assets/Images/html5.svg'
+import js from '../assets/Images/js.svg'
+import react from '../assets/Images/react.svg'
+import tailw from '../assets/Images/tailw.svg'
+import ts from '../assets/Images/ts.svg'
+
 
 const Home = () => {
 
@@ -37,6 +44,14 @@ const Home = () => {
                 <h4><FormattedMessage id="app.home.basedin" defaultMessage={"based in Colombia"}/> </h4>
                 <div className='text-description'>
                     <p><FormattedMessage id="app.home.description" defaultMessage={"I'm a curious and dedicated junior web developer, with a strong passion for the IT industry; always seeking constant and continuous improvement of my knowledge and skills."}/> </p>
+                </div>
+                <div className='icons-tools'>
+                    <img src={css3} alt=''/>
+                    <img src={html5} alt=''/>
+                    <img src={js} alt=''/>
+                    <img src={react} alt=''/>
+                    <img src={tailw} alt=''/>
+                    <img src={ts} alt=''/>
                 </div>
             </div>
             <div className='home-buttons'>

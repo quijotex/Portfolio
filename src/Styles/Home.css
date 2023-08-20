@@ -53,6 +53,14 @@
     color: var(--Whitw);
     line-height: 1.3;
 }
+.icons-tools {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+.icons-tools img {
+    width: 40px;
+}
 .home-buttons  {
     position: absolute;
     display: flex;
