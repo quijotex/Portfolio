@@ -48,6 +48,7 @@
 }
 .pages-nav a {
     color: var(--Whitw);
+   
 }
 .appnav-settings {
     color: var(--Whitw);
@@ -64,7 +65,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 100;
+    z-index: 400;
 }
 .modal-appnav.is-visible {
     display: flex;
@@ -84,8 +85,8 @@
 }
 .modal-button {
     position: absolute;
-   top: 20px;
-   right: 20px;
+    top: 20px;
+    right: 20px;
     color: var(--Whitw);
     background-color: var(--Blue-background);
     border: none;
@@ -93,4 +94,62 @@
 .switch-mode {
     display: flex;
     gap: 20px;
+}
+
+/*Modal responsive*/
+
+.modal-show {
+    display: none;
+    height: 100%;
+    justify-content: flex-end;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+.modal-show button {
+   color:  var(--Light-grey);
+   display: flex;
+   background-color: var(--Blue-background);
+   border: none;
+   transition: transform .5s
+}
+.modal-show button:hover {
+    transform: scale(1.1);
+}
+.show-options {
+    display: none;
+    position: absolute;
+    z-index: 300;
+    right: 0;
+    background-color: var(--modal-responsive);
+    width: 150px;
+    height: 360px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: var(--Whitw);
+}
+.show-options.isModal {
+    display: flex;  
+}
+.close-button {
+    color: var(--Whitw);
+    position: relative;
+    width: 10px;
+    left: 70px;
+    background-color: var(--buttons-modal);
+    border: none;
+}
+.show-options__nav {
+    margin-top: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.show-options__nav li a {
+    color: var(--Whitw);
+}
+.show-options__button {
+    background-color: var(--buttons-modal);
+    border: none;
+    color: var(--Whitw);
 }

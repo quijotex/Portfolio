@@ -105,3 +105,84 @@
 .languages .tooltip-arrow::before {
     display: none;
 }
+.responsive-modal {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    gap: 30px; 
+}
+.responsive-modal button {
+    background-color: var(--Earie-black);
+    border: none;
+    color: var(--Whitw);
+    cursor: pointer;
+}
+.objectives-modal, .education-modal, .language-modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.486);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 310;
+    font-size: 0.7rem;
+}
+.objectives-modal.isOn,  .education-modal.isOn, .language-modal.isOn {
+    display: flex;
+}
+.objectives-modal--open {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--Whitw);
+    gap: 10px;
+    background-color: var(--Blue-background);
+    border-radius: 5px;
+    position: relative;
+}
+ .objectives-modal--open li {
+    width: 250px;
+    list-style: none;
+ }
+ .spanish-modal--version h2 {
+    font-size: 1.2rem;
+ }
+ .spanish-modal--version li {
+    font-size: 0.63rem;
+ }
+ .close-objectives, .close-education, .close-language {
+    border: none;
+    background-color:  var(--Blue-background);
+    color: var(--Whitw);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+ }
+ .education-modal--open, .language-modal--open {
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--Whitw);
+    background-color: var(--Blue-background);
+    border-radius: 5px;
+    position: relative;
+ }
+ .education-modal--open p {
+    width: 200px;
+ }
+ .language-modal-text {
+    text-align: center;
+ }
+ 

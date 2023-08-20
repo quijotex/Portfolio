@@ -85,7 +85,7 @@ const Work = () => {
                                     </div>
                                 </div>
                                 <Card.Body className="work-card__body">
-                                    <Card.Text>
+                                    <Card.Text className="work-card__text">
                                     {item.description}
                                     </Card.Text>
                                     <Link  to={item.url} target="_blank">

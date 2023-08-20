@@ -1,6 +1,5 @@
 .home {
     display: flex;
-    
 }
 .background-name {
     background-color: var( --dark-blue);

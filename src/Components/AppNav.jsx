@@ -6,7 +6,7 @@ import Switch from "./Switch";
 const AppNav = ({ setLocale, locale, setLanguage }) => {
 
   const [ isOpen, setIsOpen ] = useState(false)
-
+  const [ isModal, setIsModal ] = useState(false)
     return(
         <nav className="nav-main">
         <div className="name-nav">
@@ -15,28 +15,35 @@ const AppNav = ({ setLocale, locale, setLanguage }) => {
         </Link>
         </div>
         <div className="pages-nav">
-        <ul  className="links-nav">
-          <li>
-            <Link to="/aboutme">
-              <FormattedMessage id="app.appnav.about" defaultMessage={"About me"} /></Link>
-          </li>
-          <li>
-            <Link to="/work"><FormattedMessage id="app.appnav.work" defaultMessage={"Work"} /></Link>
-          </li>
-          <li>
-            <Link to="/skillset"><FormattedMessage id="app.appnav.skillset" defaultMessage={"Skillset"} /></Link>
-          </li>
-          <li>
-            <Link to="/learning"><FormattedMessage id="app.appnav.learning" defaultMessage={"Learning"} /></Link>
-          </li>
-          <li>
-            <Link to="/contact"><FormattedMessage id="app.appnav.contact" defaultMessage={"Contact"} /></Link>
-          </li>
-          <li>
-            <button className="appnav-settings" onClick={() => setIsOpen(true)}><i className='bx bx-cog bx-sm'></i></button>
-          </li>
-        </ul>
+          <ul  className="links-nav">
+              <li>
+                <Link to="/aboutme">
+                  <FormattedMessage id="app.appnav.about" defaultMessage={"About me"} /></Link>
+              </li>
+              <li>
+                <Link to="/work"><FormattedMessage id="app.appnav.work" defaultMessage={"Work"} /></Link>
+              </li>
+              <li>
+                <Link to="/skillset"><FormattedMessage id="app.appnav.skillset" defaultMessage={"Skillset"} /></Link>
+              </li>
+              <li>
+                <Link to="/learning"><FormattedMessage id="app.appnav.learning" defaultMessage={"Learning"} /></Link>
+              </li>
+              <li>
+                <Link to="/contact"><FormattedMessage id="app.appnav.contact" defaultMessage={"Contact"} /></Link>
+              </li>
+              <li>
+                <button className="appnav-settings" onClick={() => setIsOpen(true)}><i className='bx bx-cog bx-sm'></i></button>
+              </li>
+            </ul>
+             {/* Modal responsive */}
+            <div className='modal-show'>
+              <button onClick={() => setIsModal(true)}><i className='bx bx-menu-alt-right bx-lg'></i></button>
+            </div>
+               {/* Final code Button Modal responsive */}
         </div>
+        
+
         <div className={`modal-appnav ${isOpen?  "is-visible" : ""}`}>
           <div className="visible-modal">
           <button  className="modal-button" onClick={() => setIsOpen(false)}><i className='bx bx-x    bx-md'></i></button>
@@ -64,6 +71,32 @@ const AppNav = ({ setLocale, locale, setLanguage }) => {
              
            </div>
         </div>
+       {/* Modal responsive */}
+        <div className={`show-options ${isModal ? "isModal" : ""}`}>
+          
+            <ul  className="show-options__nav">
+            <button onClick={() => setIsModal(false)}className="close-button"><i className='bx bx-x bx-sm'></i></button>
+                  <li>
+                    <Link to="/aboutme">
+                      <FormattedMessage id="app.appnav.about" defaultMessage={"About me"} /></Link>
+                  </li>
+                  <li>
+                    <Link to="/work"><FormattedMessage id="app.appnav.work" defaultMessage={"Work"} /></Link>
+                  </li>
+                  <li>
+                    <Link to="/skillset"><FormattedMessage id="app.appnav.skillset" defaultMessage={"Skillset"} /></Link>
+                  </li>
+                  <li>
+                    <Link to="/learning"><FormattedMessage id="app.appnav.learning" defaultMessage={"Learning"} /></Link>
+                  </li>
+                  <li>
+                    <Link to="/contact"><FormattedMessage id="app.appnav.contact" defaultMessage={"Contact"} /></Link>
+                  </li>
+                  <li>
+                    <button className="show-options__button" onClick={() => setIsOpen(true)}><i className='bx bx-cog bx-md'></i></button>
+                  </li>
+                </ul>
+            </div>
       </nav>
    
     )
