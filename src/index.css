@@ -153,14 +153,22 @@ body {
     .home-text p {
         font-size: 0.8rem;
         width: 304.3px;
-        
-      
     }
     .text-me {
         font-size: 1.4rem;
     }
     .icons-tools {
        justify-content: flex-end;
+    }
+    .curriculum-tools {
+        display: none;
+    }
+    .curriculum-tools--responsive {
+        display: flex;
+    }
+    .curriculum-tools--responsive a button {
+        width: 95px;
+        height: 19px;
     }
     /*Modal responsive*/
     .links-nav {

@@ -18,6 +18,7 @@ function App() {
  
   const [ locale, setLocale ] = useState("en");
   const [ language, setLanguage ] = useState(false)
+  const [ cvMario, setCVMario ] = useState(false);
 
   const switchLanguages = {
     en: english,
@@ -31,9 +32,9 @@ const LocalData = switchLanguages[locale]
     <IntlProvider messages={LocalData} key={locale}  locale={locale}>
      <HashRouter> 
       
-        <AppNav setLocale={setLocale} locale={locale} setLanguage={setLanguage}/>
+        <AppNav setLocale={setLocale} locale={locale} setLanguage={setLanguage} setCVMario={setCVMario}/>
       <Routes>
-      <Route path='/' element={<Home/>}/>
+      <Route path='/' element={<Home cvMario={cvMario}/>}/>
         <Route element={<Footer/>}>
           <Route path='/aboutme' element={<AboutMe/>}/>
           <Route path='/work' element={<Work/>}/>

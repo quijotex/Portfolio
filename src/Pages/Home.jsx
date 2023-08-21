@@ -8,9 +8,10 @@ import js from '../assets/Images/js.svg'
 import react from '../assets/Images/react.svg'
 import tailw from '../assets/Images/tailw.svg'
 import ts from '../assets/Images/ts.svg'
+import cvspanish from '../assets/CV-Mario-Martinez-Español.pdf'
+import cvenglish from '../assets/CV-Mario-Martinez-English.pdf'
 
-
-const Home = () => {
+const Home = ({ cvMario }) => {
 
     const el = React.useRef(null);
 
@@ -46,13 +47,20 @@ const Home = () => {
                     <p><FormattedMessage id="app.home.description" defaultMessage={"I'm a curious and dedicated junior web developer, with a strong passion for the IT industry; always seeking constant and continuous improvement of my knowledge and skills."}/> </p>
                 </div>
                 <div className='icons-tools'>
+                   
                     <img src={css3} alt=''/>
                     <img src={html5} alt=''/>
                     <img src={js} alt=''/>
                     <img src={react} alt=''/>
                     <img src={tailw} alt=''/>
                     <img src={ts} alt=''/>
+                    <div className='curriculum-tools'>
+                        {cvMario?  <a href={cvspanish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvspanish" defaultMessage={"Download CV"}/></span></button></a> :  <a href={cvenglish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvenglish" defaultMessage={"Download CV"}/></span></button></a> }
+                    </div>
                 </div>
+                    <div className='curriculum-tools--responsive'>
+                        {cvMario?  <a href={cvspanish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvspanish" defaultMessage={"Download CV"}/></span></button></a> :  <a href={cvenglish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvenglish" defaultMessage={"Download CV"}/></span></button></a> }
+                    </div>
             </div>
             <div className='home-buttons'>
                 <a href='https://www.linkedin.com/in/mario-mart%C3%ADnez-961393189/' target='_blank'>

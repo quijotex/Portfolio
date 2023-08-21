@@ -3,10 +3,11 @@ import { FormattedMessage } from "react-intl";
 import { useState } from "react";
 import Switch from "./Switch";
 
-const AppNav = ({ setLocale, locale, setLanguage }) => {
+const AppNav = ({ setLocale, locale, setLanguage, setCVMario }) => {
 
-  const [ isOpen, setIsOpen ] = useState(false)
-  const [ isModal, setIsModal ] = useState(false)
+  const [ isOpen, setIsOpen ] = useState(false);
+  const [ isModal, setIsModal ] = useState(false);
+
     return(
         <nav className="nav-main">
         <div className="name-nav">
@@ -54,8 +55,10 @@ const AppNav = ({ setLocale, locale, setLanguage }) => {
                 setLocale(e.target.value); 
                 if(e.target.value === "es"){
                   setLanguage(true)
+                  setCVMario(true)
                 } else {
                   setLanguage(false)
+                  setCVMario(false)
                 }
               }}
               value={locale}>
