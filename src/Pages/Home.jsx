@@ -1,6 +1,10 @@
 import React from 'react'
 import Typed from 'typed.js'
 import photo from '../assets/Images/ProfilePhoto.webp'
+import photo1 from '../assets/Images/Photo1.png'
+import photo2 from '../assets/Images/Photo2.png'
+import photo3 from '../assets/Images/Photo3.png'
+import photo4 from '../assets/Images/Photo4.png'
 import { FormattedMessage } from 'react-intl'
 import css3 from '../assets/Images/css3.svg'
 import html5 from '../assets/Images/html5.svg'
@@ -103,7 +107,7 @@ const Home = ({ cvMario }) => {
             <div className="background-name"/>
             <animated.div style={animationRight} className='photo-me '>
                 
-                <img src={photo} alt="" />
+                <img src={photo2} alt="" />
              
             </animated.div>
            
