@@ -20,16 +20,64 @@ const Home = ({ cvMario }) => {
         config: {duration: 500} ,
       })
 
-      const animationLeft = useSpring({
+    
+      const animationLeftText = useSpring({
         from: { x: 1000 },
         to: { x: 0 },
         config: {duration: 500} ,
+      
       })
-
+      const animationLefth4 = useSpring({
+        from: { x: 1000 },
+        to: { x: 0 },
+        config: {duration: 600} ,
+        
+      })
+      const animationLeftDescription = useSpring({
+        from: { x: 1000 },
+        to: { x: 0 },
+        config: {duration: 700} ,
+      })
+    
+      const animationLeftIconCSS = useSpring({
+        from: { x: 1000 },
+        to: { x: 0 },
+        config: {duration: 750} ,
+      })
+      const animationLeftIconHTML = useSpring({
+        from: { x: 1000 },
+        to: { x: 0 },
+        config: {duration: 800} ,
+      })
+      const animationLeftIconJS = useSpring({
+        from: { x: 1000 },
+        to: { x: 0 },
+        config: {duration: 850} ,
+      })
+      const animationLeftIconReact = useSpring({
+        from: { x: 1000 },
+        to: { x: 0 },
+        config: {duration: 900} ,
+      })
+      const animationLeftIconTailwind = useSpring({
+        from: { x: 1000 },
+        to: { x: 0 },
+        config: {duration: 950} ,
+      })
+      const animationLeftIconTs = useSpring({
+        from: { x: 1000 },
+        to: { x: 0 },
+        config: {duration: 1000} ,
+      })
+      const animationLeftIconDonwload = useSpring({
+        from: { x: 1000 },
+        to: { x: 0 },
+        config: {duration: 1050} ,
+      })
       const animatedIn = useSpring({
         from: {opacity: 0 },
         to: { opacity: 1 },
-        config: {duration: 700} ,
+        config: {duration: 1400} ,
       })
 
     const el = React.useRef(null);
@@ -59,33 +107,33 @@ const Home = ({ cvMario }) => {
              
             </animated.div>
            
-            <animated.div style={animationLeft}  className='home-text'>
+            <div className='home-text'>
            
-                <div className='text-me'>
+                <animated.div style={animationLeftText} className='text-me'>
                     <span><FormattedMessage id="app.home.iam" defaultMessage={"I'm"}/></span>
                     <span ref={el}/> 
-                </div>
-                <h4><FormattedMessage id="app.home.basedin" defaultMessage={"based in Colombia"}/> </h4>
-                <div className='text-description'>
+                </animated.div>
+                <animated.h4 style={animationLefth4}><FormattedMessage id="app.home.basedin" defaultMessage={"based in Colombia"}/> </animated.h4>
+                <animated.div style={animationLeftDescription} className='text-description'>
                     <p><FormattedMessage id="app.home.description" defaultMessage={"I'm a curious and dedicated junior web developer, with a strong passion for the IT industry; always seeking constant and continuous improvement of my knowledge and skills."}/> </p>
-                </div>
-                <div className='icons-tools'>
+                </animated.div>
+                <div  className='icons-tools'>
                    
-                    <img src={css3} alt=''/>
-                    <img src={html5} alt=''/>
-                    <img src={js} alt=''/>
-                    <img src={react} alt=''/>
-                    <img src={tailw} alt=''/>
-                    <img src={ts} alt=''/>
-                    <div className='curriculum-tools'>
+                    <animated.img style={animationLeftIconCSS} src={css3} alt=''/>
+                    <animated.img style={animationLeftIconHTML}  src={html5} alt=''/>
+                    <animated.img style={animationLeftIconJS}  src={js} alt=''/>
+                    <animated.img style={animationLeftIconReact}  src={react} alt=''/>
+                    <animated.img style={animationLeftIconTailwind} src={tailw} alt=''/>
+                    <animated.img style={animationLeftIconTs} src={ts} alt=''/>
+                    <animated.div style={animationLeftIconDonwload} className='curriculum-tools'>
                         {cvMario?  <a href={cvspanish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvspanish" defaultMessage={"Download CV"}/></span></button></a> :  <a href={cvenglish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvenglish" defaultMessage={"Download CV"}/></span></button></a> }
-                    </div>
+                    </animated.div>
                 </div>
-                    <div className='curriculum-tools--responsive'>
+                    <animated.div style={animationLeftIconDonwload}   className='curriculum-tools--responsive'>
                         {cvMario?  <a href={cvspanish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvspanish" defaultMessage={"Download CV"}/></span></button></a> :  <a href={cvenglish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvenglish" defaultMessage={"Download CV"}/></span></button></a> }
-                    </div>
+                    </animated.div>
                   
-            </animated.div>
+            </div>
            
             
            
