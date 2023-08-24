@@ -25,11 +25,10 @@ function App() {
     es: spanish
   }
 
-const LocalData = switchLanguages[locale]
- 
+
   return (
     
-    <IntlProvider messages={LocalData} key={locale}  locale={locale}>
+    <IntlProvider messages={switchLanguages[locale]} key={locale}  locale={locale}>
      <HashRouter> 
       
         <AppNav setLocale={setLocale} locale={locale} setLanguage={setLanguage} setCVMario={setCVMario}/>

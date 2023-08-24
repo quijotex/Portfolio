@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 const Switch = () => {
 
-    const [isLight, setIsLight] = useState('dark');
+    const [isLight, setIsLight] = useState();
 
     useEffect(() => {
 
@@ -10,13 +10,13 @@ const Switch = () => {
 
     }, [isLight]);
 
-    const handleChange = (e)=>setIsLight(e.target.checked ? 'light' : 'dark');
+    const handleChange = (e)=> setIsLight(e.target.checked ? 'light' : 'dark');
 
     return (
        <>
         <div  className="container-switch">
             <label className="switch">
-                <input type="checkbox" onChange={handleChange} checked={isLight === 'light'} />
+                <input type="checkbox" onChange={handleChange} checked={isLight} />
                 <span className="slider"></span>
             </label>
         </div>

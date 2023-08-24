@@ -4,6 +4,7 @@ import Tooltip from 'react-bootstrap/Tooltip';
 import IllustrationMan from '../assets/Images/IllustrationMan.svg'
 import { FormattedMessage } from 'react-intl';
 import { useState } from 'react';
+import { animated, useSpring } from '@react-spring/web';
 
 const AboutMe = () => {
         const [ isObjectives, setIsObjectives ] = useState(false);

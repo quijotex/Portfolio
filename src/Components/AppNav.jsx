@@ -2,21 +2,72 @@ import { Link } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 import { useState } from "react";
 import Switch from "./Switch";
+import { animated, useSpring } from '@react-spring/web';
 
 const AppNav = ({ setLocale, locale, setLanguage, setCVMario }) => {
 
   const [ isOpen, setIsOpen ] = useState(false);
   const [ isModal, setIsModal ] = useState(false);
 
+  const animatedIn = useSpring({
+    from: {opacity: 0 },
+    to: { opacity: 1 },
+    config: {duration: 700} ,
+  })
+
+  const animationLeft = useSpring({
+    from: { x: 1000 },
+    to: { x: 0 },
+    config: {duration: 1600} ,
+  })
+
+  const animatedAboutme = useSpring({
+    from: {opacity: 0 },
+    to: { opacity: 1 },
+    config: {duration: 400} ,
+  })
+
+  const animatedWork = useSpring({
+    from: {opacity: 0 },
+    to: { opacity: 1 },
+    config: {duration: 600} ,
+  })
+
+  const animatedSkillset = useSpring({
+    from: {opacity: 0 },
+    to: { opacity: 1 },
+    config: {duration: 800} ,
+  })
+
+  const animatedLearning = useSpring({
+    from: {opacity: 0 },
+    to: { opacity: 1 },
+    config: {duration: 1000} ,
+  })
+
+  const animatedContact = useSpring({
+    from: {opacity: 0 },
+    to: { opacity: 1 },
+    config: {duration: 1200} ,
+  })
+
+  const animatedSettings = useSpring({
+    from: {opacity: 0 },
+    to: { opacity: 1 },
+    config: {duration: 1400} ,
+  })
     return(
         <nav className="nav-main">
         <div className="name-nav">
+        <animated.div style={animatedIn} >
         <Link to="/">
         <h1> Mario.M</h1>
         </Link>
+        </animated.div>
         </div>
-        <div className="pages-nav">
-          <ul  className="links-nav">
+        <div  className="pages-nav">
+          <ul className="links-nav" >
+          <animated.div style={animatedIn} className="links-nav">
               <li>
                 <Link to="/aboutme">
                   <FormattedMessage id="app.appnav.about" defaultMessage={"About me"} /></Link>
@@ -36,19 +87,25 @@ const AppNav = ({ setLocale, locale, setLanguage, setCVMario }) => {
               <li>
                 <button className="appnav-settings" onClick={() => setIsOpen(true)}><i className='bx bx-cog bx-sm'></i></button>
               </li>
+              </animated.div>
             </ul>
+           
              {/* Modal responsive */}
-            <div className='modal-show'>
+            <animated.div style={animatedIn} className='modal-show'>
               <button onClick={() => setIsModal(true)}><i className='bx bx-menu-alt-right bx-lg'></i></button>
-            </div>
+            </animated.div>
                {/* Final code Button Modal responsive */}
         </div>
-        
-
         <div className={`modal-appnav ${isOpen?  "is-visible" : ""}`}>
           <div className="visible-modal">
           <button  className="modal-button" onClick={() => setIsOpen(false)}><i className='bx bx-x    bx-md'></i></button>
             <h2><FormattedMessage id="app.appnav.settings" defaultMessage={"Settings"} /></h2>
+            <h4><FormattedMessage id="app.appnav.changemode" defaultMessage={"Change mode:"}/></h4>
+            <div className="switch-mode">
+                <span><FormattedMessage id="app.appnav.darkmode" defaultMessage={"Dark"}/></span>
+                <Switch/>
+                <span><FormattedMessage id="app.appnav.lightmode" defaultMessage={"Light"}/></span>
+              </div>
             <h4><FormattedMessage id="app.appnav.changelanguage" defaultMessage={"Change language:"}/></h4>
               <select 
               onChange={(e) => {
@@ -65,41 +122,34 @@ const AppNav = ({ setLocale, locale, setLanguage, setCVMario }) => {
                 <option value="es"><FormattedMessage id="app.appnav.languageEs" defaultMessage={"Spanish"} /></option>
                 <option value="en"><FormattedMessage id="app.appnav.languageEn" defaultMessage={"English"} /></option>
               </select>
-              <h4><FormattedMessage id="app.appnav.changemode" defaultMessage={"Change mode:"}/></h4>
-              <div className="switch-mode">
-                <span><FormattedMessage id="app.appnav.darkmode" defaultMessage={"Dark"}/></span>
-                <Switch/>
-                <span><FormattedMessage id="app.appnav.lightmode" defaultMessage={"Light"}/></span>
-              </div>
-             
            </div>
         </div>
        {/* Modal responsive */}
-        <div className={`show-options ${isModal ? "isModal" : ""}`}>
+        <animated.div style={animatedIn} className={`show-options ${isModal ? "isModal" : ""}`}>
           
-            <ul  className="show-options__nav">
+            <ul className="show-options__nav">
             <button onClick={() => setIsModal(false)}className="close-button"><i className='bx bx-x bx-sm'></i></button>
-                  <li>
-                    <Link to="/aboutme">
+                  <li onClick={() => setIsModal(false)}>
+                    <Link to="/aboutme" >
                       <FormattedMessage id="app.appnav.about" defaultMessage={"About me"} /></Link>
                   </li>
-                  <li>
+                  <li onClick={() => setIsModal(false)}>
                     <Link to="/work"><FormattedMessage id="app.appnav.work" defaultMessage={"Work"} /></Link>
                   </li>
-                  <li>
+                  <li onClick={() => setIsModal(false)}>
                     <Link to="/skillset"><FormattedMessage id="app.appnav.skillset" defaultMessage={"Skillset"} /></Link>
                   </li>
-                  <li>
+                  <li onClick={() => setIsModal(false)}>
                     <Link to="/learning"><FormattedMessage id="app.appnav.learning" defaultMessage={"Learning"} /></Link>
                   </li>
-                  <li>
+                  <li onClick={() => setIsModal(false)}>
                     <Link to="/contact"><FormattedMessage id="app.appnav.contact" defaultMessage={"Contact"} /></Link>
                   </li>
-                  <li>
+                  <li onClick={() => setIsModal(false)}>
                     <button className="show-options__button" onClick={() => setIsOpen(true)}><i className='bx bx-cog bx-md'></i></button>
                   </li>
                 </ul>
-            </div>
+            </animated.div>
       </nav>
    
     )

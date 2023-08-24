@@ -10,8 +10,27 @@ import tailw from '../assets/Images/tailw.svg'
 import ts from '../assets/Images/ts.svg'
 import cvspanish from '../assets/CV-Mario-Martinez-Español.pdf'
 import cvenglish from '../assets/CV-Mario-Martinez-English.pdf'
+import { animated, useSpring } from '@react-spring/web'
 
 const Home = ({ cvMario }) => {
+
+    const animationRight = useSpring({
+        from: { x: -1000 },
+        to: { x: 0 },
+        config: {duration: 500} ,
+      })
+
+      const animationLeft = useSpring({
+        from: { x: 1000 },
+        to: { x: 0 },
+        config: {duration: 500} ,
+      })
+
+      const animatedIn = useSpring({
+        from: {opacity: 0 },
+        to: { opacity: 1 },
+        config: {duration: 700} ,
+      })
 
     const el = React.useRef(null);
 
@@ -34,10 +53,14 @@ const Home = ({ cvMario }) => {
     return(
         <main className="home">
             <div className="background-name"/>
-            <div className='photo-me'>
+            <animated.div style={animationRight} className='photo-me '>
+                
                 <img src={photo} alt="" />
-            </div>
-            <div className='home-text'>
+             
+            </animated.div>
+           
+            <animated.div style={animationLeft}  className='home-text'>
+           
                 <div className='text-me'>
                     <span><FormattedMessage id="app.home.iam" defaultMessage={"I'm"}/></span>
                     <span ref={el}/> 
@@ -61,8 +84,13 @@ const Home = ({ cvMario }) => {
                     <div className='curriculum-tools--responsive'>
                         {cvMario?  <a href={cvspanish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvspanish" defaultMessage={"Download CV"}/></span></button></a> :  <a href={cvenglish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvenglish" defaultMessage={"Download CV"}/></span></button></a> }
                     </div>
-            </div>
-            <div className='home-buttons'>
+                  
+            </animated.div>
+           
+            
+           
+            <animated.div style={animatedIn} className='home-buttons'>
+       
                 <a href='https://www.linkedin.com/in/mario-mart%C3%ADnez-961393189/' target='_blank'>
                 <button><i className='bx bxl-linkedin-square'></i></button>
                 </a>
@@ -72,7 +100,10 @@ const Home = ({ cvMario }) => {
                 <a href='mailto:mariopresiga@gmail.com'>
                 <button><i className='bx bx-envelope'></i></button>
                 </a>
-            </div>
+              
+                </animated.div>
+            
+           
             <div className="background-links"/>
         </main>
     )

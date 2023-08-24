@@ -1,16 +1,17 @@
 import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import EcommerceAcademlo from '../assets/Images/E-commerceAcademlo.png'
-import Ecommerce from '../assets/Images/E-commerce.png'
-import Pokedex from '../assets/Images/Pokedex.png'
-import RickAndMorty from '../assets/Images/RickAndMorty.png'
-import UsersCRUD from '../assets/Images/UsersCRUD.png'
-import Weather from '../assets/Images/WeatherApp.png'
+import Ecommerce from '../assets/Images/E-commerce.png';
+import Pokedex from '../assets/Images/Pokedex.png';
+import RickAndMorty from '../assets/Images/RickAndMorty.png';
+import UsersCRUD from '../assets/Images/UsersCRUD.png';
+import Weather from '../assets/Images/WeatherApp.png';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
-import { FormattedMessage } from 'react-intl'
+import { FormattedMessage } from 'react-intl';
+import { animated, useSpring } from '@react-spring/web';
 
 const Work = () => {
     const infoCard = [
