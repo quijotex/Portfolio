@@ -4,13 +4,17 @@ import Tooltip from 'react-bootstrap/Tooltip';
 import IllustrationMan from '../assets/Images/IllustrationMan.svg'
 import { FormattedMessage } from 'react-intl';
 import { useState } from 'react';
-import { animated, useSpring } from '@react-spring/web';
+
+
+
+
 
 const AboutMe = () => {
+
         const [ isObjectives, setIsObjectives ] = useState(false);
         const [ isEducation, setIsEducation ] = useState(false);
         const [ isLanguage, setIsLanguage ] = useState(false);
-
+   
     const objectivesAndGoals = (props) => (
       
         <Tooltip className='objectives' {...props}>
@@ -20,11 +24,11 @@ const AboutMe = () => {
                     <h2> <FormattedMessage id='app.aboutme.goal' defaultMessage={"Goals"}/></h2>
                     <li>
                         <p>
-                        <FormattedMessage id='app.aboutme.goalone' defaultMessage={"Become a proficient front-end developer. I'm eager to create visually appealing and responsive web interfaces that enhance user experiences and drive engagement."}/>
+                        <FormattedMessage id='app.aboutme.goalone' defaultMessage={"Become a proficient front-end developer. I'm eager to create visually appealing and responsive web interfaces that enhance user experiences and."}/>
                         </p>
                     </li>
                     <li>
-                        <p><FormattedMessage id='app.aboutme.goaltwo' defaultMessage={"Engage in team projects to learn diverse technologies and refine collaboration, enhancing both technical and interpersonal skills."}/>
+                        <p><FormattedMessage id='app.aboutme.goaltwo' defaultMessage={"Engage in team projects to learn diverse technologies and refine collaboration skills."}/>
                         
                         </p>
                     </li>
@@ -88,7 +92,7 @@ const AboutMe = () => {
             <div className='aboutme-buttons'>
                 {[
                     {written: objectivesAndGoals,
-                    button: <FormattedMessage id="app.aboutme.buttonone" defaultMessage={"Objectives and Goals"}/>    
+                    button: <FormattedMessage id="app.aboutme.buttonone" defaultMessage={"Objectives and Goals"}/>
                     }, {written: Education,
                     button: <FormattedMessage id="app.aboutme.buttontwo" defaultMessage={"Education"}/>  }, 
                     {written: languages,
@@ -124,11 +128,11 @@ const AboutMe = () => {
                             <h2> <FormattedMessage id='app.aboutme.goal' defaultMessage={"Goals"}/></h2>
                             <li>
                                 <p>
-                                <FormattedMessage id='app.aboutme.goalone' defaultMessage={"Become a proficient front-end developer. I'm eager to create visually appealing and responsive web interfaces that enhance user experiences and drive engagement."}/>
+                                <FormattedMessage id='app.aboutme.goalone' defaultMessage={"Become a proficient front-end developer. I'm eager to create visually appealing and responsive web interfaces that enhance user experiences."}/>
                                 </p>
                             </li>
                             <li>
-                                <p><FormattedMessage id='app.aboutme.goaltwo' defaultMessage={"Engage in team projects to learn diverse technologies and refine collaboration, enhancing both technical and interpersonal skills."}/>
+                                <p><FormattedMessage id='app.aboutme.goaltwo' defaultMessage={"Engage in team projects to learn diverse technologies and refine collaboration skills."}/>
                                 
                                 </p>
                             </li>

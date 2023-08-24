@@ -10,28 +10,23 @@ import AppNav from './Components/AppNav'
 import Home from './Pages/Home'
 import Footer from './Components/Footer';
 import { IntlProvider } from 'react-intl';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import spanish from './locales/es.json';
 import english from './locales/en.json';
 
 function App() {
  
-  const [ locale, setLocale ] = useState("en");
-  const [ language, setLanguage ] = useState(false)
+  const [ locale, setLocale ] = useState('en')
+  const [ language, setLanguage ] = useState(false);
   const [ cvMario, setCVMario ] = useState(false);
-
-  const switchLanguages = {
-    en: english,
-    es: spanish
-  }
-
+ 
 
   return (
     
-    <IntlProvider messages={switchLanguages[locale]} key={locale}  locale={locale}>
+    <IntlProvider messages={locale === 'es' ? spanish : english}   locale={locale}>
      <HashRouter> 
       
-        <AppNav setLocale={setLocale} locale={locale} setLanguage={setLanguage} setCVMario={setCVMario}/>
+        <AppNav setLocale={setLocale}  locale={locale} setLanguage={setLanguage} setCVMario={setCVMario}/>
       <Routes>
       <Route path='/' element={<Home cvMario={cvMario}/>}/>
         <Route element={<Footer/>}>

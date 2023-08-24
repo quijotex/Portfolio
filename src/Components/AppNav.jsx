@@ -8,6 +8,7 @@ const AppNav = ({ setLocale, locale, setLanguage, setCVMario }) => {
 
   const [ isOpen, setIsOpen ] = useState(false);
   const [ isModal, setIsModal ] = useState(false);
+  
 
   const animatedIn = useSpring({
     from: {opacity: 0 },
@@ -56,6 +57,17 @@ const AppNav = ({ setLocale, locale, setLanguage, setCVMario }) => {
     to: { opacity: 1 },
     config: {duration: 1400} ,
   })
+
+  const handleLanguages = (e) => {
+    setLocale(e.target.value)  
+    if(e.target.value === "es"){
+      setLanguage(true)
+      setCVMario(true)
+    } else {
+      setLanguage(false)
+      setCVMario(false)
+    }
+  }
     return(
         <nav className="nav-main">
         <div className="name-nav">
@@ -108,16 +120,7 @@ const AppNav = ({ setLocale, locale, setLanguage, setCVMario }) => {
               </div>
             <h4><FormattedMessage id="app.appnav.changelanguage" defaultMessage={"Change language:"}/></h4>
               <select 
-              onChange={(e) => {
-                setLocale(e.target.value); 
-                if(e.target.value === "es"){
-                  setLanguage(true)
-                  setCVMario(true)
-                } else {
-                  setLanguage(false)
-                  setCVMario(false)
-                }
-              }}
+              onChange={handleLanguages}
               value={locale}>
                 <option value="es"><FormattedMessage id="app.appnav.languageEs" defaultMessage={"Spanish"} /></option>
                 <option value="en"><FormattedMessage id="app.appnav.languageEn" defaultMessage={"English"} /></option>

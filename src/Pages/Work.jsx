@@ -60,7 +60,7 @@ const Work = () => {
         ]
     return(
         <section className="work-done">
-             <h2><FormattedMessage id="app.work.title" defaultMessage={"Work that I've done"}/></h2>
+             <h2><FormattedMessage id="app.work.title" defaultMessage={"Works that I've done"}/></h2>
             <Row>
                         {infoCard.map(item => 
                          <Col key={item.url} className="work-col">
