@@ -12,7 +12,7 @@ import js from '../assets/Images/js.svg'
 import react from '../assets/Images/react.svg'
 import tailw from '../assets/Images/tailw.svg'
 import ts from '../assets/Images/ts.svg'
-import cvspanish from '../assets/CV-Mario-Martinez-Español.pdf'
+import cvspanish from '../assets/CV-Mario-Martinez-Espanol.pdf'
 import cvenglish from '../assets/CV-Mario-Martinez-English.pdf'
 import { animated, useSpring } from '@react-spring/web'
 
