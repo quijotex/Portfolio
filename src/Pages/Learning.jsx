@@ -1,5 +1,5 @@
 import typeScript from '../assets/Images/TypeScript.svg'
-import Nodejs from '../assets/Images/Nodejs.svg'
+import Python from '../assets/Images/python.svg'
 import Tailwind from '../assets/Images/Tailwind.svg'
 import { Link } from 'react-router-dom';
 import { FormattedMessage } from 'react-intl'
@@ -13,7 +13,7 @@ const Learning = () => {
                 <img src={typeScript} alt=''/>
             </div>
             <div>
-                <img src={Nodejs} alt=''/>
+                <img src={Python} alt=''/>
             </div>
             <div>
                 <img src={Tailwind} alt=''/>

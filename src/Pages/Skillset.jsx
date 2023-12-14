@@ -14,6 +14,7 @@ const Skillset = () => {
                         <li>JavaScript</li>
                         <li>CSS</li>
                         <li>HTML5</li>
+                        <li>Node.js</li>
                     </ul>
                 </div>
                 <div className="skillset-skills--below">
@@ -25,6 +26,9 @@ const Skillset = () => {
                         <ul>
                             <li>React</li>
                             <li>Boostrap</li>
+                            <li>PostgreSQL</li>
+                            <li>Sequelize</li>
+                            <li>Express</li>
                         </ul>
                     </div>
                     <div>
