@@ -11,8 +11,8 @@ import ts from '../assets/Images/ts.svg'
 import node from '../assets/Images/ndjs.svg'
 import postgres from '../assets/Images/postgresql.svg'
 import sequelize from '../assets/Images/sequelize.svg'
-import cvspanish from '../assets/CV-Mario-Martinez-Espanol.pdf'
-import cvenglish from '../assets/CV-Mario-Martinez-English.pdf'
+import cvspanish from '../assets/DS-CV-en-Espanol.pdf'
+import cvenglish from '../assets/DS-CV-in-English.pdf'
 import { animated, useSpring } from '@react-spring/web'
 
 const Home = ({ cvMario }) => {
