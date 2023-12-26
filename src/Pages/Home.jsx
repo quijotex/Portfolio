@@ -1,10 +1,6 @@
 import React from 'react'
 import Typed from 'typed.js'
-import photo from '../assets/Images/ProfilePhoto.webp'
-import photo1 from '../assets/Images/Photo1.png'
 import photo2 from '../assets/Images/Photo2.png'
-import photo3 from '../assets/Images/Photo3.png'
-import photo4 from '../assets/Images/Photo4.png'
 import { FormattedMessage } from 'react-intl'
 import css3 from '../assets/Images/css3.svg'
 import html5 from '../assets/Images/html5.svg'
@@ -12,8 +8,11 @@ import js from '../assets/Images/js.svg'
 import react from '../assets/Images/react.svg'
 import tailw from '../assets/Images/tailw.svg'
 import ts from '../assets/Images/ts.svg'
-import cvspanish from '../assets/CV-Mario-Martinez-Español.pdf'
-import cvenglish from '../assets/CV-Mario-Martinez-English.pdf'
+import node from '../assets/Images/ndjs.svg'
+import postgres from '../assets/Images/postgresql.svg'
+import sequelize from '../assets/Images/sequelize.svg'
+import cvspanish from '../assets/DS-CV-en-Espanol.pdf'
+import cvenglish from '../assets/DS-CV-in-English.pdf'
 import { animated, useSpring } from '@react-spring/web'
 
 const Home = ({ cvMario }) => {
@@ -73,10 +72,25 @@ const Home = ({ cvMario }) => {
         to: { x: 0 },
         config: {duration: 1000} ,
       })
-      const animationLeftIconDonwload = useSpring({
+      const animationLeftIconNode = useSpring({
         from: { x: 1000 },
         to: { x: 0 },
         config: {duration: 1050} ,
+      })
+      const animationLeftIconPostgres = useSpring({
+        from: { x: 1000 },
+        to: { x: 0 },
+        config: {duration: 1100} ,
+      })
+      const animationLeftIconSequelize = useSpring({
+        from: { x: 1000 },
+        to: { x: 0 },
+        config: {duration: 1150} ,
+      })
+      const animationLeftIconDonwload = useSpring({
+        from: { x: 1000 },
+        to: { x: 0 },
+        config: {duration: 1200} ,
       })
       const animatedIn = useSpring({
         from: {opacity: 0 },
@@ -88,7 +102,7 @@ const Home = ({ cvMario }) => {
 
     React.useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["Mario Martínez", "Frontend Developer"],
+            strings: ["Mario Martínez", "Frontend Developer", "Backend Developer"],
             typeSpeed: 200,
             backSpeed: 200,
             startDelay: 10,
@@ -129,6 +143,9 @@ const Home = ({ cvMario }) => {
                     <animated.img style={animationLeftIconReact}  src={react} alt=''/>
                     <animated.img style={animationLeftIconTailwind} src={tailw} alt=''/>
                     <animated.img style={animationLeftIconTs} src={ts} alt=''/>
+                    <animated.img style={animationLeftIconNode} src={node} alt=''/>
+                    <animated.img style={animationLeftIconPostgres} src={postgres} alt=''/>
+                    <animated.img style={animationLeftIconSequelize} src={sequelize} alt=''/>
                     <animated.div style={animationLeftIconDonwload} className='curriculum-tools'>
                         {cvMario?  <a href={cvspanish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvspanish" defaultMessage={"Download CV"}/></span></button></a> :  <a href={cvenglish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvenglish" defaultMessage={"Download CV"}/></span></button></a> }
                     </animated.div>

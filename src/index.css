@@ -66,6 +66,9 @@ body {
     .text-me {
         font-size: 3rem;
     }
+    .icons-tools {
+        gap: 10px;
+    }
     /*About me*/
     .objectives .render-uls ul li {
         font-size: 0.6rem;
@@ -107,9 +110,13 @@ body {
     }
     .icons-tools {
         gap: 0px;
+        height: 30px;
     }
     .text-me {
         font-size: 2rem;
+    }
+    .curriculum-tools {
+        margin-left: auto;
     }
 
     /* Responsive About me*/
@@ -156,9 +163,6 @@ body {
     }
     .text-me {
         font-size: 1.4rem;
-    }
-    .icons-tools {
-       justify-content: flex-end;
     }
     .curriculum-tools {
         display: none;

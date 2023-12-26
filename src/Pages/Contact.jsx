@@ -3,9 +3,8 @@ import { FormattedMessage } from 'react-intl';
 
 
 
+// eslint-disable-next-line react/prop-types
 const Contact = ({language} ) => {
-
-   
 
     return(
         <section className="contact">
