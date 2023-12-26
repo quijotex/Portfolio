@@ -131,7 +131,7 @@ body {
     height: 250px;
     left: 20px;
    }
-   @media (max-width: 425px) {
+   @media (max-width: 430px) {
     /*AppNav*/
     .visible-modal {
         width: 70%;
@@ -145,7 +145,7 @@ body {
     .home-text {
         width: 300px;
         left: 40px;
-        bottom: 140px;
+        bottom: 240px;
     }
     .home-text h4 {
         font-size: 1.6rem;
