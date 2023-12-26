@@ -92,15 +92,15 @@ body {
     /*responsive Home */
     .photo-me {
         width: 300px;
-        height: 70%;
+        height: 60%;
     }
     .photo-me  img {
         height: 400px;
     }
     .home-text {
-        width: 450px;
-        left: 280px;
-        bottom: 150px;
+        width: 400px;
+        left: 320px;
+        bottom: 300px;
     }
     .home-text h4 {
         font-size: 2rem;
@@ -109,9 +109,6 @@ body {
         font-size: 1rem;
     }
     .icons-tools {
-
-
-        
         gap: 0px;
         height: 30px;
     }
@@ -121,7 +118,6 @@ body {
     .curriculum-tools {
         margin-left: auto;
     }
-
     /* Responsive About me*/
     .illustration-man {
         width: 390px;
