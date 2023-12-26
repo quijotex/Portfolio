@@ -109,6 +109,9 @@ body {
         font-size: 1rem;
     }
     .icons-tools {
+
+
+        
         gap: 0px;
         height: 30px;
     }
@@ -246,4 +249,28 @@ body {
         margin-left: 40px;
     }
    }
+}
+@media (max-width: 320px) {
+    .home-text {
+        width: 300px;
+        left: 10px;
+        bottom: 350px;
+    }
+    
+    .home-text h4 {
+        font-size: 1rem;
+    } 
+    .home-text p {
+        font-size: 0.8rem;
+        width: 270px;
+    }
+    .curriculum-tools--responsive {
+        display: flex;
+        justify-content: center;
+    }
+    .curriculum-tools--responsive a button {
+        width: 95px;
+        height: 19px;
+    }
+    
 }
