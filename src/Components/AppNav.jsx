@@ -106,13 +106,13 @@ const AppNav = ({ setLocale, locale, setLanguage, setCVMario }) => {
            
              {/* Modal responsive */}
             <animated.div style={animatedIn} className='modal-show'>
-              <button onClick={() => setIsModal(true)}><i className='bx bx-menu-alt-right bx-lg'></i></button>
+              <button id="modal" aria-label="modal-responsive" onClick={() => setIsModal(true)}><i className='bx bx-menu-alt-right bx-lg'></i></button>
             </animated.div>
                {/* Final code Button Modal responsive */}
         </div>
         <div className={`modal-appnav ${isOpen?  "is-visible" : ""}`}>
           <div className="visible-modal">
-          <button  className="modal-button" onClick={() => setIsOpen(false)}><i className='bx bx-x    bx-md'></i></button>
+          <button id="modal-button" aria-label="modal-button-responsive" className="modal-button" onClick={() => setIsOpen(false)}><i className='bx bx-x    bx-md'></i></button>
             <h2><FormattedMessage id="app.appnav.settings" defaultMessage={"Settings"} /></h2>
             <h4><FormattedMessage id="app.appnav.changemode" defaultMessage={"Change mode:"}/></h4>
             <div className="switch-mode">
@@ -133,7 +133,7 @@ const AppNav = ({ setLocale, locale, setLanguage, setCVMario }) => {
         <animated.div style={animatedIn} className={`show-options ${isModal ? "isModal" : ""}`}>
           
             <ul className="show-options__nav">
-            <button onClick={() => setIsModal(false)}className="close-button"><i className='bx bx-x bx-sm'></i></button>
+            <button id="deployment-options" aria-label="options" onClick={() => setIsModal(false)}className="close-button"><i className='bx bx-x bx-sm'></i></button>
                   <li onClick={() => setIsModal(false)}>
                     <Link to="/aboutme" >
                       <FormattedMessage id="app.appnav.about" defaultMessage={"About me"} /></Link>
@@ -151,7 +151,7 @@ const AppNav = ({ setLocale, locale, setLanguage, setCVMario }) => {
                     <Link to="/contact"><FormattedMessage id="app.appnav.contact" defaultMessage={"Contact"} /></Link>
                   </li>
                   <li onClick={() => setIsModal(false)}>
-                    <button className="show-options__button" onClick={() => setIsOpen(true)}><i className='bx bx-cog bx-md'></i></button>
+                    <button id="settings-responsive" aria-label="settings-responsive" className="show-options__button" onClick={() => setIsOpen(true)}><i className='bx bx-cog bx-md'></i></button>
                   </li>
                 </ul>
             </animated.div>
