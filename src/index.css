@@ -206,9 +206,13 @@ body {
     .work-img  {
         font-size: 0.5rem;
     }
+    .work-img--hover {
+        gap: 0px;
+    }
     .work-card__text {
         font-size: 0.8rem;
         width: 220px;
+        
        
     }
     /*Skillset*/
@@ -278,7 +282,7 @@ body {
     }
     .work-img__text {
         font-size: 0.1rem;
-        
+        margin: 5px;
     }
     .work-img__text p {
         font-size: 0.5rem;

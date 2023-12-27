@@ -18,42 +18,42 @@ const Work = () => {
         {
             image: Ecommerce,
             description: <FormattedMessage id="app.work.ecommercedescription" defaultMessage={"Collaborative development of an online store for technological products."}/>,
-            tecnologies: "React, JavaScript, CSS, HTML5, Bootstrap, React's libraries, Node, PostgreSQL, Express, Sequelize",
-            info: <FormattedMessage id="app.work.ecommerceinfo" defaultMessage={"In this project, I implemented functional solutions that increased the project’s utility. Also, I actively contributed to the team by implementing key features and solving technical issues. At the same time, I used React.js to create a dynamic and appealing interface, CSS with BEM, methodology for consistent styling, Axios for communication with API’s, and React-bootstrap to enhance the user experience. By the back-end, I used PostgreSQL, Express, Sequelize and Postman"}/>,
+            tecnologies: "React, JavaScript, CSS3, HTML5, Bootstrap, React's libraries, Node, PostgreSQL, Express, Sequelize",
+            info: <FormattedMessage id="app.work.ecommerceinfo" defaultMessage={"In this project, I implemented functional solutions that increased the project’s utility. Also, I actively contributed to the team by implementing key features and solving technical issues. At the same time, I used React.js to create a dynamic and appealing interface, CSS3 with BEM, methodology for consistent styling, Axios for communication with API’s, and React-bootstrap to enhance the user experience. By the back-end, I used PostgreSQL, Express, Sequelize and Postman"}/>,
             url: "https://e-commerce-technology.netlify.app/#/"
         }, 
          {
             image: Pokedex,
             description: <FormattedMessage id="app.work.pokedexdescription" defaultMessage={"Responsive website dedicated to the Pokémon universe."}/>,
-            tecnologies: "React, JavaScript, CSS, HTML5, Bootstrap, React's libraries",
+            tecnologies: "React, JavaScript, CSS3, HTML5, Bootstrap, React's libraries",
             info: <FormattedMessage id="app.work.pokedexinfo" defaultMessage={"In this project, I based the development on React.js to build an interactive website and utilized react-paginate, react-router-dom, and react-bootstrap to enhance navigation and design. In addition, I implemented protected routes and structured the content modularly. Finally, my attention to detail and time management enabled the successful completion of all project phases and timely overcoming of technical challenges."}/>,
             url: "https://pokepokedex-app.netlify.app/"
         }, 
         {
             image: RickAndMorty,
             description: <FormattedMessage id="app.work.rickandmortydescription" defaultMessage={"Dive into the Rick and Morty's world through this responsive website."}/>,
-            tecnologies: "React, JavaScript, CSS, HTML5",
+            tecnologies: "React, JavaScript, CSS3, HTML5",
             info: <FormattedMessage id="app.work.rickandmortyinfo" defaultMessage={"Based on a given design, I built the best approximation possible, demonstrating my abilities to follow the requiered design at once my skills to implement the needed funcionalities"}/>,
             url: "https://rickand-morty-app.netlify.app/"
         }, 
         {
             image: UsersCRUD,
             description: <FormattedMessage id="app.work.cruddescription" defaultMessage={"Development of a responsive web platform for user management."}/>,
-            info: <FormattedMessage id="app.work.crudinfo" defaultMessage={"In this development, I used React.js to create a user-friendly interface, HTML5 and CSS for structure and styling. Also I demonstrated autonomy in making technical decisions and skills in solving challenges. In addition, I successfully implemented the interaction between CRUD methods and communication with API’s using Axios, ensuring an efficient data flow within the platform. Finally, I created the back-end using PostgreSQL, Express, Sequelize y Postman"}/>,
-            tecnologies: "React, JavaScript, CSS, HTML5, Node, Sequelize, PostgreSQL, Express",
+            info: <FormattedMessage id="app.work.crudinfo" defaultMessage={"In this development, I used React.js to create a user-friendly interface, HTML5 and CSS3 for structure and styling. Also I demonstrated autonomy in making technical decisions and skills in solving challenges. In addition, I successfully implemented the interaction between CRUD methods and communication with API’s using Axios, ensuring an efficient data flow within the platform. Finally, I created the back-end using PostgreSQL, Express, Sequelize y Postman"}/>,
+            tecnologies: "React, JavaScript, CSS3, HTML5, Node, Sequelize, PostgreSQL, Express",
             url: "https://users-crudapp.netlify.app/"
         }, 
         {
             image: EcommerceAcademlo,
             description: <FormattedMessage id="app.work.ecommerceacadescription" defaultMessage={"Academlo's store, which is well-organized and easy to navigate."}/>,
-            tecnologies: "JavaScript, CSS, HTML5",
-            info: <FormattedMessage id="app.work.ecommerceacainfo" defaultMessage={"This is the result of a teamwork's job. In this project, we just used JS, CSS and HTML5, proving our skills working only with vanilla's tools. Here I could demonstrate my teamwork's abilities, my time managment and my communication skills."}/>,
+            tecnologies: "JavaScript, CSS3, HTML5",
+            info: <FormattedMessage id="app.work.ecommerceacainfo" defaultMessage={"This is the result of a teamwork's job. In this project, we just used JS, CSS3 and HTML5, proving our skills working only with vanilla's tools. Here I could demonstrate my teamwork's abilities, my time managment and my communication skills."}/>,
             url: "https://e-commerceacademlo.netlify.app/"
         }, 
          {
             image: Weather,
             description: <FormattedMessage id="app.work.weatherdescription" defaultMessage={"Search your location and discover the weather with this simple and useful web."}/>,
-            tecnologies: "React, CSS, HTML5",
+            tecnologies: "React, CSS3, HTML5",
             info: <FormattedMessage id="app.work.weatherinfo" defaultMessage={"Useful App to know the weather conditions in your city or wherever you want to know. It has the dark and ligth modes, and I created it consuming an API"}/>, 
             url: "https://weather-app-quijotex.netlify.app/"
         }

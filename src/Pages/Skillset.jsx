@@ -12,7 +12,7 @@ const Skillset = () => {
                     <h3><FormattedMessage id="app.skillset.languages" defaultMessage={"Languages"}/></h3>
                     <ul>
                         <li>JavaScript</li>
-                        <li>CSS</li>
+                        <li>CSS3</li>
                         <li>HTML5</li>
                         <li>Node.js</li>
                     </ul>
