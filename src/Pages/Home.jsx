@@ -151,7 +151,7 @@ const Home = ({ cvMario }) => {
                     </animated.div>
                 </div>
                     <animated.div style={animationLeftIconDonwload}   className='curriculum-tools--responsive'>
-                        {cvMario?  <a href={cvspanish} download="CV Mario Martínez"><button id='Cv2' aria-label='Cv in Spanish'><span><FormattedMessage id="app.home.cvspanish" defaultMessage={"Download CV"}/></span></button></a> :  <a href={cvenglish} download="CV Mario Martínez"><button id='Cv4' aria-label='CV in English Responsive'><span><FormattedMessage id="app.home.cvenglish" defaultMessage={"Download CV"}/></span></button></a> }
+                        {cvMario?  <a href={cvspanish} download="CV Mario Martínez"><button id='Cv2' aria-label='Cv in Spanish'><span><FormattedMessage id="app.home.cvspanish" defaultMessage={"Download CV"}/></span></button></a> :  <a href={cvenglish} download="CV Mario Martínez"><button id='Cv4' aria-label='Click to download English CV'><span><FormattedMessage id="app.home.cvenglish" defaultMessage={"Download CV"}/></span></button></a> }
                     </animated.div>
                   
             </div>
