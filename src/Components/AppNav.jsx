@@ -78,8 +78,9 @@ const AppNav = ({ setLocale, locale, setLanguage, setCVMario }) => {
         </animated.div>
         </div>
         <div  className="pages-nav">
-          <ul className="links-nav" >
+          
           <animated.div style={animatedIn} className="links-nav">
+            <ul className="links-nav" >
               <li>
                 <Link to="/aboutme">
                   <FormattedMessage id="app.appnav.about" defaultMessage={"About me"} /></Link>
@@ -97,10 +98,11 @@ const AppNav = ({ setLocale, locale, setLanguage, setCVMario }) => {
                 <Link to="/contact"><FormattedMessage id="app.appnav.contact" defaultMessage={"Contact"} /></Link>
               </li>
               <li>
-                <button className="appnav-settings" onClick={() => setIsOpen(true)}><i className='bx bx-cog bx-sm'></i></button>
+                <button id='Settings' aria-label="Settings" className="appnav-settings" onClick={() => setIsOpen(true)}><i className='bx bx-cog bx-sm'></i></button>
               </li>
-              </animated.div>
             </ul>
+          </animated.div>
+            
            
              {/* Modal responsive */}
             <animated.div style={animatedIn} className='modal-show'>

@@ -131,7 +131,7 @@ const Home = ({ cvMario }) => {
                     <span><FormattedMessage id="app.home.iam" defaultMessage={"I'm"}/></span>
                     <span ref={el}/> 
                 </animated.div>
-                <animated.h4 style={animationLefth4}><FormattedMessage id="app.home.basedin" defaultMessage={"based in Colombia"}/> </animated.h4>
+                <animated.h2 style={animationLefth4}><FormattedMessage id="app.home.basedin" defaultMessage={"based in Colombia"}/> </animated.h2>
                 <animated.div style={animationLeftDescription} className='text-description'>
                     <p><FormattedMessage id="app.home.description" defaultMessage={"I'm a curious and dedicated web developer, with a strong passion for the IT industry; always seeking constant and continuous improvement of my knowledge and skills."}/> </p>
                 </animated.div>
@@ -147,11 +147,11 @@ const Home = ({ cvMario }) => {
                     <animated.img style={animationLeftIconPostgres} src={postgres} alt=''/>
                     <animated.img style={animationLeftIconSequelize} src={sequelize} alt=''/>
                     <animated.div style={animationLeftIconDonwload} className='curriculum-tools'>
-                        {cvMario?  <a href={cvspanish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvspanish" defaultMessage={"Download CV"}/></span></button></a> :  <a href={cvenglish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvenglish" defaultMessage={"Download CV"}/></span></button></a> }
+                        {cvMario?  <a href={cvspanish} download="CV Mario Martínez"><button id='Cv' aria-label='Cv in English'><span><FormattedMessage id="app.home.cvspanish" defaultMessage={"Download CV"}/></span></button></a> :  <a href={cvenglish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvenglish" defaultMessage={"Download CV"}/></span></button></a> }
                     </animated.div>
                 </div>
                     <animated.div style={animationLeftIconDonwload}   className='curriculum-tools--responsive'>
-                        {cvMario?  <a href={cvspanish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvspanish" defaultMessage={"Download CV"}/></span></button></a> :  <a href={cvenglish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvenglish" defaultMessage={"Download CV"}/></span></button></a> }
+                        {cvMario?  <a href={cvspanish} download="CV Mario Martínez"><button id='Cv2' aria-label='Cv in Spanish'><span><FormattedMessage id="app.home.cvspanish" defaultMessage={"Download CV"}/></span></button></a> :  <a href={cvenglish} download="CV Mario Martínez"><button><span><FormattedMessage id="app.home.cvenglish" defaultMessage={"Download CV"}/></span></button></a> }
                     </animated.div>
                   
             </div>
@@ -160,14 +160,14 @@ const Home = ({ cvMario }) => {
            
             <animated.div style={animatedIn} className='home-buttons'>
        
-                <a href='https://www.linkedin.com/in/mario-mart%C3%ADnez-961393189/' target='_blank'>
-                <button><i className='bx bxl-linkedin-square'></i></button>
+                <a href='https://www.linkedin.com/in/mario-mart%C3%ADnez-961393189/' target='_blank' aria-label='Go to my LinkedIn'>
+                <button id='linkedIn' aria-label='LinkedIn'><i className='bx bxl-linkedin-square'></i></button>
                 </a>
-                <a href='https://github.com/quijotex' target='_blank'>
-                <button><i className='bx bxl-github' ></i></button>
+                <a href='https://github.com/quijotex' target='_blank' aria-label='Go to my GitHub'>
+                <button id='GitHub' aria-label='GitHub'><i className='bx bxl-github' ></i></button>
                 </a>
-                <a href='mailto:mariopresiga@gmail.com'>
-                <button><i className='bx bx-envelope'></i></button>
+                <a href='mailto:mariopresiga@gmail.com' aria-label='Send me an email'>
+                <button id='myemail' aria-label='My Email'><i className='bx bx-envelope'></i></button>
                 </a>
               
                 </animated.div>
