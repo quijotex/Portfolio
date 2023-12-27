@@ -1,25 +1,25 @@
 import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import EcommerceAcademlo from '../assets/Images/E-commerceAcademlo.png'
-import Ecommerce from '../assets/Images/E-commerce.png';
-import Pokedex from '../assets/Images/Pokedex.png';
-import RickAndMorty from '../assets/Images/RickAndMorty.png';
-import UsersCRUD from '../assets/Images/UsersCRUD.png';
-import Weather from '../assets/Images/WeatherApp.png';
+import EcommerceAcademlo from '../assets/Images/E-commerceAcademlo.webp'
+import Ecommerce from '../assets/Images/E-commerce.webp';
+import Pokedex from '../assets/Images/Pokedex.webp';
+import RickAndMorty from '../assets/Images/RickAndMorty.webp';
+import UsersCRUD from '../assets/Images/UsersCRUD.webp';
+import Weather from '../assets/Images/WeatherApp.webp';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import { FormattedMessage } from 'react-intl';
-import { animated, useSpring } from '@react-spring/web';
+
 
 const Work = () => {
     const infoCard = [
         {
             image: Ecommerce,
             description: <FormattedMessage id="app.work.ecommercedescription" defaultMessage={"Collaborative development of an online store for technological products."}/>,
-            tecnologies: "React, JavaScript, CSS, HTML5, Bootstrap, React's libraries",
-            info: <FormattedMessage id="app.work.ecommerceinfo" defaultMessage={"In this project, I implemented functional solutions that increased the project’s utility. Also, I actively contributed to the team by implementing key features and solving technical issues. At the same time, I used React.js to create a dynamic and appealing interface, CSS with BEM, methodology for consistent styling, Axios for communication with API’s, and React-bootstrap to enhance the user experience."}/>,
+            tecnologies: "React, JavaScript, CSS, HTML5, Bootstrap, React's libraries, Node, PostgreSQL, Express, Sequelize",
+            info: <FormattedMessage id="app.work.ecommerceinfo" defaultMessage={"In this project, I implemented functional solutions that increased the project’s utility. Also, I actively contributed to the team by implementing key features and solving technical issues. At the same time, I used React.js to create a dynamic and appealing interface, CSS with BEM, methodology for consistent styling, Axios for communication with API’s, and React-bootstrap to enhance the user experience. By the back-end, I used PostgreSQL, Express, Sequelize and Postman"}/>,
             url: "https://e-commerce-technology.netlify.app/#/"
         }, 
          {
@@ -39,8 +39,8 @@ const Work = () => {
         {
             image: UsersCRUD,
             description: <FormattedMessage id="app.work.cruddescription" defaultMessage={"Development of a responsive web platform for user management."}/>,
-            info: <FormattedMessage id="app.work.crudinfo" defaultMessage={"In this development, I used React.js to create a user-friendly interface, HTML5 and CSS for structure and styling. Also I demonstrated autonomy in making technical decisions and skills in solving challenges. In addition, I successfully implemented the interaction between CRUD methods and communication with API’s using Axios, ensuring an efficient data flow within the platform."}/>,
-            tecnologies: "React, JavaScript, CSS, HTML5",
+            info: <FormattedMessage id="app.work.crudinfo" defaultMessage={"In this development, I used React.js to create a user-friendly interface, HTML5 and CSS for structure and styling. Also I demonstrated autonomy in making technical decisions and skills in solving challenges. In addition, I successfully implemented the interaction between CRUD methods and communication with API’s using Axios, ensuring an efficient data flow within the platform. Finally, I created the back-end using PostgreSQL, Express, Sequelize y Postman"}/>,
+            tecnologies: "React, JavaScript, CSS, HTML5, Node, Sequelize, PostgreSQL, Express",
             url: "https://users-crudapp.netlify.app/"
         }, 
         {

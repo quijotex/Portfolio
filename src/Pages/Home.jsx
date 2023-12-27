@@ -1,6 +1,6 @@
 import React from 'react'
 import Typed from 'typed.js'
-import photo2 from '../assets/Images/Photo2.png'
+import photo2 from '../assets/Images/Photo2.webp'
 import { FormattedMessage } from 'react-intl'
 import css3 from '../assets/Images/css3.svg'
 import html5 from '../assets/Images/html5.svg'
@@ -133,7 +133,7 @@ const Home = ({ cvMario }) => {
                 </animated.div>
                 <animated.h4 style={animationLefth4}><FormattedMessage id="app.home.basedin" defaultMessage={"based in Colombia"}/> </animated.h4>
                 <animated.div style={animationLeftDescription} className='text-description'>
-                    <p><FormattedMessage id="app.home.description" defaultMessage={"I'm a curious and dedicated junior web developer, with a strong passion for the IT industry; always seeking constant and continuous improvement of my knowledge and skills."}/> </p>
+                    <p><FormattedMessage id="app.home.description" defaultMessage={"I'm a curious and dedicated web developer, with a strong passion for the IT industry; always seeking constant and continuous improvement of my knowledge and skills."}/> </p>
                 </animated.div>
                 <div  className='icons-tools'>
                    

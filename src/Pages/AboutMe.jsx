@@ -24,7 +24,7 @@ const AboutMe = () => {
                     <h2> <FormattedMessage id='app.aboutme.goal' defaultMessage={"Goals"}/></h2>
                     <li>
                         <p>
-                        <FormattedMessage id='app.aboutme.goalone' defaultMessage={"Become a proficient front-end developer. I'm eager to create visually appealing and responsive web interfaces that enhance user experiences and."}/>
+                        <FormattedMessage id='app.aboutme.goalone' defaultMessage={"Become a proficient full-stack developer."}/>
                         </p>
                     </li>
                     <li>
@@ -42,7 +42,7 @@ const AboutMe = () => {
                 <ul>
                     <h2><FormattedMessage id='app.aboutme.objectives' defaultMessage={"Objectives"}/></h2>
                     <li>
-                        <p><FormattedMessage id='app.aboutme.objectivesone' defaultMessage={"Collaborate on projects to sharpen my front-end development skills, making meaningful contributions within 6 months."}/>
+                        <p><FormattedMessage id='app.aboutme.objectivesone' defaultMessage={"Collaborate on projects to sharpen my full-stack development skills, making meaningful contributions within 6 months."}/>
                       
                         </p>
                     </li>
@@ -128,7 +128,7 @@ const AboutMe = () => {
                             <h2> <FormattedMessage id='app.aboutme.goal' defaultMessage={"Goals"}/></h2>
                             <li>
                                 <p>
-                                <FormattedMessage id='app.aboutme.goalone' defaultMessage={"Become a proficient front-end developer. I'm eager to create visually appealing and responsive web interfaces that enhance user experiences."}/>
+                                <FormattedMessage id='app.aboutme.goalone' defaultMessage={"Become a proficient full-stack developer."}/>
                                 </p>
                             </li>
                             <li>
@@ -146,7 +146,7 @@ const AboutMe = () => {
                         <ul>
                             <h2><FormattedMessage id='app.aboutme.objectives' defaultMessage={"Objectives"}/></h2>
                             <li>
-                                <p><FormattedMessage id='app.aboutme.objectivesone' defaultMessage={"Collaborate on projects to sharpen my front-end development skills, making meaningful contributions within 6 months."}/>
+                                <p><FormattedMessage id='app.aboutme.objectivesone' defaultMessage={"Collaborate on projects to sharpen my full-stack development skills, making meaningful contributions within 6 months."}/>
                             
                                 </p>
                             </li>
