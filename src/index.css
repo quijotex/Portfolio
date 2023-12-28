@@ -38,6 +38,34 @@ body {
     --modal-responsive: #5221E6;
     --buttons-modal: #5221E6;
 }
+
+@media (max-width: 1366px) and (orientation: landscape) {
+
+/* responsive Home */
+       .home-text {
+           width: 500px;
+           left: 380px;
+           top: 200px;
+       }
+       .home-text h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+       }
+       .home-text p {
+           font-size: 1.5rem;
+           margin-bottom: 0px;
+       }
+       .curriculum-tools {
+        margin-left: 0px;
+       }
+      
+       .text-me {
+           font-size: 2rem;
+       }
+       .icons-tools {
+           height: 30px;
+       }
+    }
 @media (max-width: 1024px) {
     /* responsive AppNav */
  
@@ -63,7 +91,7 @@ body {
     .home-text {
         width: 540px;
         left: 350px;
-        top: 470px;
+        top: 250px;
     }
     .home-text p {
         font-size: 1rem;
@@ -92,7 +120,71 @@ body {
         overflow-y: auto;
     }
   }
-  
+  /*Horizontal responsive*/
+
+  @media (max-width: 932px) and (orientation: landscape) {
+    
+     /* responsive Home */
+       .home-text {
+           width: 450px;
+           left: 300px;
+           top: 100px;
+       }
+       .home-text h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+       }
+       .home-text p {
+           font-size: 0.7rem;
+           margin-bottom: 0px;
+       }
+       .curriculum-tools {
+        margin-left: 0px;
+       }
+      
+       .text-me {
+           font-size: 1rem;
+       }
+       .icons-tools {
+           height: 30px;
+       }
+       /*About me*/
+       .aboutme {
+        align-items: center;
+       }
+       .aboutme-buttons button {
+        font-size: 1rem;
+       }
+       .objectives .render-uls ul li {
+           font-size: 0.45rem;
+          }
+
+     /*Skillset*/
+     .skillset-skills {
+        gap: 0px;
+     }
+     .skillset-skills img {
+        height: 30px;
+     }
+     .skillset-skills li, h3 {
+        font-size: 0.5rem;
+     }
+     /*Learning*/
+     .learning {
+        gap: 0px;
+     }
+     .learning img {
+        height: 40px;
+     }
+     .learning-contact h2 {
+        margin-bottom: 0px;
+     }
+
+     /*Settings*/
+     .visible-modal {
+        gap: 20px;
+     } 
+  }
   @media (max-width: 768px) {
   
     /*responsive Home */
@@ -105,12 +197,11 @@ body {
     .home-text {
         width: 400px;
         left: 320px;
-        top: 380px;
+        top: 170px;
     }
     .home-text h4 {
         font-size: 2rem;
     } 
-  
     .icons-tools img {
         height: 30px;
     }
@@ -139,6 +230,24 @@ body {
     height: 250px;
     left: 20px;
    }
+
+   @media (max-width: 740px) and (orientation: landscape) {
+
+    /*Home */
+    .home-text {
+        width: 400px;
+        left: 230px;
+        top: 100px;
+    }
+    .photo-me  img {
+        height: 200px;
+    }
+
+    /*About me */
+    .objectives .render-uls ul li {
+        font-size: 0.45rem;
+       }
+   }
    @media (max-width: 430px) {
     /*AppNav*/
     .visible-modal {
@@ -153,7 +262,7 @@ body {
     .home-text {
         width: 300px;
         left: 40px;
-        top: 210px;
+        top: 140px;
     }
     .home-text h4 {
         font-size: 1.6rem;
