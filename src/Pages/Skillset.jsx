@@ -29,6 +29,7 @@ const Skillset = () => {
                             <li>PostgreSQL</li>
                             <li>Sequelize</li>
                             <li>Express</li>
+                            <li>Jest</li>
                         </ul>
                     </div>
                     <div>

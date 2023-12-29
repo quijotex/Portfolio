@@ -18,8 +18,8 @@ const Work = () => {
         {
             image: Ecommerce,
             description: <FormattedMessage id="app.work.ecommercedescription" defaultMessage={"Collaborative development of an online store for technological products."}/>,
-            tecnologies: "React, JavaScript, CSS3, HTML5, Bootstrap, React's libraries, Node, PostgreSQL, Express, Sequelize",
-            info: <FormattedMessage id="app.work.ecommerceinfo" defaultMessage={"In this project, I implemented functional solutions that increased the project’s utility. Also, I actively contributed to the team by implementing key features and solving technical issues. At the same time, I used React.js to create a dynamic and appealing interface, CSS3 with BEM, methodology for consistent styling, Axios for communication with API’s, and React-bootstrap to enhance the user experience. By the back-end, I used PostgreSQL, Express, Sequelize and Postman"}/>,
+            tecnologies: "React, JavaScript, CSS3, HTML5, Bootstrap, React's libraries, Node, PostgreSQL, Express, Sequelize, Jest.",
+            info: <FormattedMessage id="app.work.ecommerceinfo" defaultMessage={"In this project, I implemented functional solutions that increased the project’s utility. Also, I actively contributed to the team by implementing key features and solving technical issues. At the same time, I used React.js to create a dynamic and appealing interface, CSS3 with BEM, methodology for consistent styling, Axios for communication with API’s, and React-bootstrap to enhance the user experience. By the back-end, I used PostgreSQL, Express, Sequelize and Postman, and at the same time I used Jest to test all the endpoints."}/>,
             url: "https://e-commerce-technology.netlify.app/#/"
         }, 
          {
