@@ -159,6 +159,9 @@ body {
        .objectives .render-uls ul li {
            font-size: 0.45rem;
           }
+        .illustration-man {
+            width: 390px;
+        }
 
      /*Skillset*/
      .skillset-skills {
@@ -169,6 +172,9 @@ body {
      }
      .skillset-skills li, h3 {
         font-size: 0.5rem;
+     }
+     .skillset-skills ul {
+        margin-bottom: 0px;
      }
      /*Learning*/
      .learning {
